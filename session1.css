@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* NAVIGATION AND THEME */
+nav {
+  position: fixed !important;
+  z-index: 1000;
+  width: 80%;
+  left: 10%;
+  top: 6%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(222, 223, 228, 0.747);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.disable
+{
+  display: none;
+}
+
+#IconContainer
+{
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  z-index: 1000;
+  flex-direction:unset;
+  margin-bottom: 2%;
+}
+#IconContainer #icon
+{
+  position: relative;
+  list-style: none ;
+  margin-left: 10%;
+  background-color: transparent;
+  display: unset;
+  padding: 0;
+}
+#IconContainer #icon #link 
+{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  box-shadow: 0px 15px 35px rgba(255, 102, 0, 0.2);
+  border: 1px solid rgba(255, 102, 0, 0.925); 
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+#IconContainer #icon #link:hover
+{
+  transform: translateY(-20px);
+}
+#IconContainer #icon #link::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 102, 0, 0.925);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+#IconContainer #icon #link:hover::before
+{
+  transform: skewX(45deg) translateX(-150px);
+}
+#sec1
+{
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
+  margin: 5%;
+
+}
+/* PROGRESSBAR */
+::-webkit-scrollbar
+{
+    width: 0;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(90deg,#ffb17c,#ffac5e,#fd993b,#f86e11,#cc5d1d);
+    background-size: 400%,400%;
+    animation: gradient 6s ease-in-out infinite;
+}
+
+#progressbar:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#a7a7a7,#818181,#646464,#7c7c7c,#a8a8a8);
+    filter: blur(10px);
+}
+#progressbar:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#a7a7a7,#818181,#646464,#7c7c7c,#a8a8a8);
+    filter: blur(80px);
+}
+/* DARKMODE BUTTON */
+#Switch
+{
+    overflow: hidden;
+    background-size: 400%,400%;
+    animation: gradient 6s ease-in-out infinite;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    border-radius: 50%;
+    border: none;
+    right: unset;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+/* DARKMODE & LIGHTMODE */
+.DarkText
+{
+  color: rgb(255, 255, 255) !important;
+  transition: 0.75s;
+}
+.LightText
+{
+  color: rgb(0, 0, 0) !important;
+  transition: 0.75s;
+}
+.DarkBGround
+{
+  background:linear-gradient(-45deg,#272727,#1d1d1d,#272727) ;
+  background-size: 400%,400% !important;
+  /* animation: gradient 6s ease-in-out infinite; */
+}
+.LightBGround
+{
+  background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(-45deg, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-45deg, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  
+
+
+}
+@keyframes gradient {
+  0%
+  {
+      background-position:0 50%;
+  }
+  50%
+  {
+      background-position: 100% 50%;
+  }
+  100%
+  {
+      background-position: 0 50%;
+  }
+}
+.list-group-item
+{
+  border: unset;
+}
+.cont1
+{
+  padding: 8%;
+  display: flex; 
+  justify-content: center;
+}
+
+
+.fade-in
+{
+    animation: animate 1s ease-in-out ;
+    transition: opacity 250ms ease-in;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+
+}
+.fade-in.appear
+{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.from-left
+{
+    animation:animatede 1s ease-in-out;
+}
+@keyframes animatede
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.from-right
+{
+    animation:animated 1s ease-in-out;
+}
+@keyframes animated
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* PRELOADER */
+
+.preloader
+{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    z-index: 10000000;
+}
+
+.preloader.active
+{
+    opacity: 0;
+    transition: ease-in-out 2s;
+    transition-delay: 1s;
+    z-index: 0;
+}
+
+.counter
+{
+    display: none;
+    position: relative;
+    color: #fff;
+    font-size: 16em;
+    font-weight: 700;
+    z-index: 1;
+}
+.counter:after
+{
+    content: '%';
+    font-size: 0.5em;
+}
+.hide
+{
+    display: none;
+    transition: 1s;
+    pointer-events: none;
+}
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    transition: 3s;
+    color: rgb(160, 160, 160);
+}
+
+/* TIPPY */
+.tippy-box[data-theme~='tomato'] {
+  background: tomato;
+  border: 1px solid yellow;
+  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+}
+.tippy-box[data-theme~='tomato'] > .tippy-arrow::before {
+  transform: scale(2);
+  border: 1px solid tomato;
+}
+
+

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Information System</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+    <link rel="stylesheet" href="vovinam.css">
+
+</head>
+<style>
+    .content::before
+    {
+        content: none;
+        background: none;
+    }
+    thead tr th:nth-child(1)
+    {
+        width: 15%;
+    }
+    thead tr th:nth-child(2)
+    {
+        width: 25%;
+    }
+    tbody tr td:nth-child(1)
+    {
+        font-weight: 500;
+    }
+</style>
+<body   >
+      
+    <img id="img" src="Fluid.png" class="img-fluid" style="position: fixed;height: 100%;width: 100%;top: 0;" alt="">
+    <div class="row main" style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin:5%;margin-left: 2%;border-radius: 20px;width: 95%;margin-top: 2%;height: 90vh;">
+        <div class="col-lg-1 column1" style="padding-left:0;padding-right: 0;border-top-left-radius: 20px;border-bottom-left-radius: 20px;background: rgba(255,255,255,0.8);backdrop-filter: blur(4px);height: 100%;" >
+            <div class="container logo">
+                <img src="favicon.png" class="img-fluid" alt="">
+                
+            </div>
+            <div class="navi_str" style="display: inline-grid;margin-top: 70%;width: 100%;">
+                <a class="navi" href="index.html"><i class="fas fa-home"></i></a>
+                <a class="navi" href="test.html"><i class="fas fa-university"></i></a>
+                <a  class="navi" href=""><i class="far fa-calendar-check"></i></a>
+                <a class="navi" href=""><i class="far fa-newspaper"></i></a>
+                <a class="navi" href="About.html"><i class="fas fa-users"></i></a>
+            </div>
+            
+            <div class="quit"><a href="university.html"><i class="fas fa-power-off"></i></a></div>
+        </div>
+        <div  class="col-lg-8 content" >
+            <div  style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;">
+                <img src="OIP.jpg" style="width: 90%; height: 50%;border-radius: 10px;" alt="">
+              </div>
+            <h1 class="heading">
+                IS - Information System 
+            </h1>
+            <p class="para"><span style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;"> Tổng quan chuyên ngành Hệ thống thông tin thuộc ngành CNTT:</span> <br> Từ nền tảng của ngành CNTT, sinh viên được học sâu hơn về các hệ thống thông tin trong doanh nghiệp, tìm hiểu nghiệp vụ triển khai các hệ thống thông tin, đảm bảo hệ thống thông tin của doanh nghiệp hoạt động an toàn cũng như phát triển các ứng dụng cho các hệ thống của doanh nghiệp.
+                Hệ thống thông tin là một hệ thống bao gồm các yếu tố có quan hệ với nhau cùng làm nhiệm vụ thu thập, xử lý, lưu trữ và phân phối thông tin và dữ liệu và cung cấp một cơ chế phản hồi để đạt được một mục tiêu định trước. Các tổ chức có thể sử dụng các hệ thống thông tin với nhiều mục đích khác nhau.Ngành Hệ thống thông tin tập trung vào thiết kế, quản trị và vận hành các hệ thống thông tin, phân tích dữ liệu, kết nối giữa các bên liên quan trong tổ chức, doanh nghiệp với các chuyên gia công nghệ thông tin, cũng như biết các làm thế nào để doanh nghiệp hoạt động hiệu quả và có lợi thế cạnh tranh hơn.
+
+ 
+
+                <br> Sinh viên ra trường có khả năng đánh giá, thẩm định và quản lý các dự án hệ thống thông tin trong doanh nghiệp; khả năng tư vấn, lập kế hoạch, xây dựng và triển khai các dự án Hệ thống thông tin quản lý.
+            </p>
+            <h1 class="heading">Lộ trình đào tạo</h1>
+            <table class="table table-striped table-bordered" style="margin-top: 5%;">
+                <thead  style="background: #ff8800;color: #fff;font-weight: 500;">
+                    <tr style="text-align: center;">
+                        <th>Học Kỳ</th>
+                        <th>Học Phần</th>
+                        <th>Kỹ Năng Đạt Được</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            
+                                Nền tảng
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Tuần lễ định hướng
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Tháng rèn luyện tập trung
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Tiếng Anh nền tảng từ Top Notch 1 đến Summit 1
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Học kỳ tiếng Anh Summit 2 tại nước ngoài
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Võ Vovinam
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Lập trình với Alice
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên có phương pháp học đại học hiệu quả
+                                        như: tự học, làm việc nhóm, quản lý thời gian,
+                                        tối ưu hóa năng lực não bộ cải thiện kết quả
+                                        học tập.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên đạt trình độ tiếng Anh tương đương
+                                        IELTS 6.0 hoặc TOEFL iBT 80.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên tự tin đọc hiểu giáo trình, học tập
+                                        hoàn toàn bằng tiếng Anh, giao tiếp thông thạo
+                                        với giảng viên và sinh viên quốc tế.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên có tinh thần rèn luyện thể chất, phát
+                                        triển cá nhân toàn diện.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên được trang bị tư duy về lập trình một
+                                        cách trực quan.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 1
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Nhập môn tính toán
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Toán cho ngành kỹ thuật
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Cơ sở lập trình (với C)
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Tổ chức và kiến trúc máy tính
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên làm quen với ngôn ngữ C, lập trình
+                                        những chương trình cơ bản đến phức tạp.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên hiểu về kiến ​​trúc và tổ chức máy
+                                        tính
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 2
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Kỹ năng làm việc nhóm
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Thiết kế Web
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Lập trình hướng đối tượng (với Java)
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Các hệ cơ sở dữ liệu
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Toán rời rạc
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Thực hành C
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Làm việc nhóm: Sinh viên học cách làm việc nhóm
+                                        hiệu quả, phát triển nhóm, thành viên nhóm, đa
+                                        dạng nhóm, lãnh đạo nhóm, động lực nhóm, mâu
+                                        thuẫn và gắn kết trong các nhóm, lập kế hoạch
+                                        và tổ chức các cuộc họp và công nghệ và các
+                                        nhóm ảo.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên có khả năng thiết kế giao diện của
+                                        một website.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên có kiến thức về lập trình hướng đối
+                                        tượng và giao tiếp cơ bản với ngôn ngữ Java.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên học cách giao tiếp cơ bản với hệ cơ
+                                        sở dữ liệu, thiết kế Database.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên thực hành lập trình ngôn ngữ C.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 3
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Tiếng Nhật sơ cấp 1 – Định hướng công nghiệp
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Hệ điều hành
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Cấu trúc dữ liệu và giải thuật
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Phát triển ứng dụng Java Desktop
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Thực hành OOP với Java
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên sử dụng Tiếng Nhật ở mức độ căn bản:
+                                        đọc, viết, giao tiếp ở môi trường làm việc.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên nắm vững quy trình phát triển phần
+                                        mềm, bao gồm các quy trình sử dụng trong ngành
+                                        công nghệ phần mềm: Water Fall, Spiral,
+                                        Interative Development, Agile.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên sử dụng thông thạo ngôn ngữ thiết kế
+                                        phần mềm UML.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 4
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Tiếng Nhật sơ cấp 2 – Định hướng công nghiệp
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Nhập môn Kỹ thuật Phần mềm
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Mạng máy tính
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Phát triển ứng dụng Java Web
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Thực hành Desktop Java
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên sử dụng Tiếng Nhật ở mức độ căn bản:
+                                        đọc, viết, giao tiếp ở môi trường làm việc.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên nắm vững quy trình phát triển phần
+                                        mềm, bao gồm các quy trình sử dụng trong ngành
+                                        công nghệ phần mềm: Water Fall, Spiral,
+                                        Interative Development, Agile.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên sử dụng thông thạo ngôn ngữ thiết kế
+                                        phần mềm UML.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 5
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Tiếng Nhật sơ cấp 3 – Định hướng công nghiệp
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        C# và .NET
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Đảm bảo chất lượng và kiểm thử phần mềm
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Yêu cầu phần mềm
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Thực hành Java Web
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên được cung cấp những kiến thức tiếng
+                                        Nhật ở mức độ Sơ cấp, đồng thời có thêm nhiều
+                                        từ vựng, nhiều chữ Hán và nhiều mẫu câu để có
+                                        thể đọc, viết những câu tương đối dài và phức
+                                        tạp.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên nắm vững các công nghệ lập trình
+                                        chuyên nghiệp trên nền tảng Microsoft .NET: C#,
+                                        ASP.NET, ASP .NET trên nền IIS, kết nối CSDL
+                                        theo mô hình ADO .NET.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên nắm vững các kỹ thuật trong kiểm thử
+                                        phần mềm: UnitTest, BlackBox, WhiteBox,
+                                        Equivalent, Boundary. Tham gia chứng chỉ kiểm
+                                        thử phần mềm ISTQB.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 6
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Đào tạo trong doanh nghiệp 1
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Khởi sự doanh nghiệp
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên làm việc trong các dự án thực tế
+                                        trong nước và quốc tế tại FPT Software hoặc các
+                                        công ty phần mềm trong và ngoài nước là đối tác
+                                        của Đại học FPT từ 4 – 8 tháng.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên xác định các mô hình, các mẫu phù
+                                        hợp, sự phối hợp giữa các mô hình nhằm tương
+                                        thích với nội dung mục đích và yêu cầu của
+                                        người sử dụng về phần mềm.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 7
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Kiến trúc và thiết kế phần mềm
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Lập trình di động
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Thiết kế cách giao tiếp giữa người và máy tính
+                                        (IS, ES)
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Tiếng Nhật sơ cấp 4
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        CNTT cơ bản theo chuẩn Nhật Bản
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Xây dựng ứng dụng trên các thiết bị di động và
+                                        kết nối với các thiết bị ngoại vi, các dịch vụ
+                                        từ bên ngoài và có khả năng chạy trên nhiều nền
+                                        tảng khác nhau từ iOS, Android đến Blackberry.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên tìm hiểu tâm lý của người dùng, hành
+                                        vi hằng ngày của người dùng trên quy trình công
+                                        việc mà họ thực hiện để từ đó tạo ra các giao
+                                        diện mà người dùng sử dụng như theo thói quen
+                                        và cách nghĩ hiện tại để họ có thể tiếp cận, sử
+                                        dụng phần mềm một cách nhanh chóng mà không cần
+                                        học tập phức tạp.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên sẽ đạt trình độ tiếng Nhật tương
+                                        đương N4.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên có kiến thức của một Kỹ sư Phần mềm
+                                        làm việc trong môi trường của Nhật Bản.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 8
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Quản trị dự án công nghệ thông tin
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Xác suất thống kê
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Tiếng Nhật trung cấp 1
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Kỹ năng giao tiếp
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên có kiến thức của vai trò Quản lý dự
+                                        án như: Lập kế hoạch, dự đoán các rủi ro, điều
+                                        phối nhân lực và chia công việc. Ngoài ra, các
+                                        kiến thức về quản lý nhân sự, phối hợp nhân
+                                        viên, xử lý xung đột sẽ được cung cấp để nâng
+                                        cao kinh nghiệm cho việc quản lý.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên được cung cấp những kiến thức nâng
+                                        cao về tiếng Nhật – tiếng Nhật Trung cấp. Có
+                                        khả năng đọc, viết, giao tiếp câu văn dài, phức
+                                        tạp, trang trọng.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                                Học kỳ 9
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Đạo đức trong CNTT
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Tiếng Nhật trung cấp 2
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Tiếng Nhật trong CNTT
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Khóa luận tốt nghiệp
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    
+                                        Sinh viên thực hiện và sở hữu đồ án/ứng dụng
+                                        của riêng mình.
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                        Sinh viên tự tin làm việc tại hầu hết các cường
+                                        quốc CNTT trên thế giới.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-2" style="margin-left: 2%;">
+            <div class="container contact">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fas fa-envelope"></i></a>
+                <a href=""><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="title_str" >
+                <h1 class="title" style="font-size: 25px;text-align: center;color: #fff">Cơ hội việc làm</h1>
+            </div>
+            <div class="clubs_str">
+                <div class="clubs-list container">
+                    <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;"> Server and network administrators</h2>
+                    <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Quản trị viên máy chủ và mạng</a>
+                </div>
+                <div class="clubs-list container">
+                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Administrators of database systems</h2>
+                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Quản trị viên các hệ cơ sở dữ liệu</a>
+                </div>
+                <div class="clubs-list container">
+                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Specialist in implementing and operating ERP, CRM systems</h2>
+                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Chuyên viên triển khai, vận hành các hệ thống ERP, CRM...  </a>
+                </div>
+               
+            </div>
+            
+           
+        </div>
+        <div class="row" style="position: absolute;bottom: -6%;right: 21%;height: 100px;width: 67%;border-radius: 20px;">
+            <div class="col-lg-6 " id="mp3" style="display: flex;justify-content:center;padding: 0;">
+                <div class="container wrapper BG" id="contain"  >
+                    <i class="fas fa-caret-square-down disappear" id="drop" onclick="disappear()" style="position: absolute;top: 2%;right: 2%;font-size: 37px;color: #fff;    transition: all 1s cubic-bezier(0.5, 0.5, 0.5, 0.5);"></i>
+                    <div class="song-details disappear" id="song-details">
+                      <p class="name"></p>
+                      <p class="artist"></p>
+                    </div>
+                    <div class="img-area margin" id="img-area">
+                      <img src="" class="img-fluid" alt="">
+                    </div>
+                    <div class="progress-area disappear" id="progress-area">
+                      <div class="progress-bar">
+                        <audio id="main-audio" src=""></audio>
+                      </div>
+                      <div class="song-timer">
+                        <span class="current-time">0:00</span>
+                        <span class="max-duration">0:00</span>
+                      </div>
+                    </div>
+                    <div class="controls ">
+                      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                      <i id="prev" class="material-icons">skip_previous</i>
+                      <div class="play-pause">
+                        <i class="material-icons play" id="play" >play_arrow</i>
+                      </div>
+                      <i id="next" class="material-icons">skip_next</i>
+                      <i id="more-music" class="material-icons" onclick="appear()">queue_music</i>
+                    </div>
+                    <div class="music-list " >
+                        <div class="header">
+                          <div class="row" style="display:block;justify-content: left;float: left;flex: none;">
+                            <i class= "list material-icons">queue_music</i>
+                            <span>Music list</span>
+                          </div>
+                          <i id="close" class="material-icons">close</i>
+                        </div>
+                        <ul>
+                          <!-- here li list are coming from js -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-6"></div>
+    </div>
+    
+ 
+    
+    
+   
+
+    <script>
+        var song_details = document.getElementById('song-details')
+        var img_area = document.getElementById('img-area')
+        var progress_area = document.getElementById('progress-area')
+        var mp3 = document.getElementById('mp3')
+        var play = document.getElementById('play')
+        var contain = document.getElementById('contain')
+        var drop = document.getElementById('drop')
+        function appear()
+        {
+            song_details.classList.remove('disappear')
+            img_area.classList.remove('margin')
+            progress_area.classList.remove('disappear')
+            contain.classList.remove('BG')
+            drop.classList.remove('disappear')
+        }
+        function disappear()
+        {
+            song_details.classList.add("disappear")
+            img_area.classList.add('margin')
+            progress_area.classList.add("disappear")
+            contain.classList.add('BG')
+            drop.classList.add("disappear")
+        }
+    </script>
+    
+   
+
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+     
+      
+</body>
+</html>

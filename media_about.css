@@ -1,0 +1,127 @@
+@media only screen and (max-width: 800px)
+{
+    .mast__title
+    {
+        letter-spacing: unset !important;
+        font-size: 38px !important;
+        padding-top: 15% !important;
+    }
+    .mast__text
+    {
+        font-size: 18px !important;
+    }
+}
+@media only screen and (max-width: 680px)
+{
+    .mast__title
+    {
+        letter-spacing: unset !important;
+        font-size: 38px !important;
+        padding-top: 15% !important;
+    }
+    .mast__text
+    {
+        font-size: 18px !important;
+    }
+    .cardi:hover .imgBx {
+        height: 130px !important;
+        width: 130px !important;
+        left: -19% !important;
+        top: 28% !important;
+    }
+    .cardi
+    {
+        width: 80% !important;
+    }
+    .cardi .contente p
+    {
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width:490px)
+{
+    #IconContainer
+    {
+        margin-bottom: 12% !important;
+    }
+    #IconContainer #icon #link
+    {
+        width: 45px !important;
+        font-size: 30px !important;
+    }
+    #Switch
+    {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .mast__title
+    {
+        letter-spacing: unset !important;
+        font-size: 38px !important;
+        padding-top: 20% !important;
+    }
+    .mast__text
+    {
+        font-size: 18px !important;
+    }
+    .cardi:hover .imgBx {
+        height: 130px !important;
+        width: 130px !important;
+        left: -19% !important;
+        top: 28% !important;
+    }
+    .cardi
+    {
+        width: 80% !important;
+    }
+    .cardi .contente p
+    {
+        font-size: 13px !important;
+         margin-left: 6%;
+    }
+    .cardi .contente h3
+    {
+        margin-top: -15% !important;
+        padding-bottom: 3%;
+        font-size: 1.5em !important;
+    }
+}
+@media only screen and (max-width:430px)
+{
+    .navbar-dark .navbar-nav .nav-link
+    {
+        color: #000 !important;
+        text-shadow:0px 0px 20px rgba(0, 0, 0, 1) !important;
+    }
+    .navbar-collapse
+    {
+        border-radius: 20px;
+        background: #ecf7f675;
+    }
+    #IconContainer #icon #link
+    {
+        width: 35px !important;
+        font-size: 20px  !important;
+        height: 35px !important
+    }
+    #Switch
+    {
+        width:35px !important;
+        height: 35px !important;
+    }
+    .mast__text 
+    {
+        font-size: 14px  !important;
+    }
+    .mast__title 
+    {
+        letter-spacing: unset !important;
+        font-size: 20px !important;
+        letter-spacing: 4px !important;
+        padding-top: 25% !important;
+    }
+    .Dark
+    {
+        margin-bottom: 8% !important
+    }
+}

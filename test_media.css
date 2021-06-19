@@ -1,0 +1,668 @@
+.navbar
+    {
+        position: absolute !important;
+        top: 0;
+    }
+
+@media only screen and (min-width:2250px) {
+    .carde
+    {
+        margin-bottom: 5% !important;
+    }
+    .head
+    {
+        font-size: 45px !important;
+        margin-top: 15% !important;
+    }
+    .contacte:nth-child(1)
+    {
+        font-size: 30px !important;
+    }
+    .navbar
+    {
+        top: 1%;
+    }
+    .fa
+    {
+        font-size: 40px;
+    }
+    .navbar-dark .navbar-nav .nav-link
+    {
+        font-size: 30px;
+    }
+    .calendar
+    {
+        font-size: 25px;
+    }
+    .headin
+    {
+        font-size: 70px !important;
+    }
+    .para
+    {
+        font-size: 44px !important;
+    }
+    .custom-btn
+    {
+        width: 230px;
+        height: 60px;
+        font-size: 30px;
+    }
+    .btn-11
+    {
+        width: 250px !important;
+    }
+    input 
+    {
+        height: 60px !important;
+    }
+    .header .row i,.header .row span,.header #close
+    {
+        font-size: 40px;
+    }
+    .music-list ul li .row span,ul li .audio-duration
+    {
+        font-size: 30px; 
+    }
+    .music-list ul li .row p
+    {
+        font-size: 25px;
+    }
+    .tag_name
+    {
+        left: -20% !important;
+        margin-top: 10%;
+    }
+    .controls i
+    {
+        font-size: 70px;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 85px;
+    }
+    .song-details .name
+    {
+        font-size: 45px;
+    }
+    .song-details .artist
+    {
+     font-size: 35px;   
+    }
+    .song-timer span
+    {
+        font-size: 30px;
+    }
+    .progress-area
+    {
+        height: 10px;
+    }
+    .play-pause i
+    {
+        font-size: 75px;
+        padding-right: 15%;
+        padding-top: 2%;
+        height: 70px;
+    }
+    .calendar header .month .year
+    {
+        font-size: 37px;
+    }
+    .calendar header .month 
+    {
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width:2100px)
+{
+    .carde
+    {
+        margin-bottom: 5% !important;
+    }
+    .head
+    {
+        font-size: 35px !important;
+        margin-top: 15% !important;
+    }
+    .contacte:nth-child(1)
+    {
+        font-size: 25px !important;
+    }
+    .navbar
+    {
+        top: 1%;
+    }
+    .fa
+    {
+        font-size: 40px;
+    }
+    .navbar-dark .navbar-nav .nav-link
+    {
+        font-size: 30px;
+    }
+    .calendar
+    {
+        font-size: 23px;
+    }
+    .headin
+    {
+        font-size: 65px !important;
+    }
+    .para
+    {
+        font-size: 44px !important;
+    }
+    .custom-btn
+    {
+        width: 230px;
+        height: 60px;
+        font-size: 30px;
+    }
+    .btn-11
+    {
+        width: 250px !important;
+    }
+    input 
+    {
+        height: 60px !important;
+    }
+    .header .row i,.header .row span,.header #close
+    {
+        font-size: 40px;
+    }
+    .music-list ul li .row span,ul li .audio-duration
+    {
+        font-size: 30px; 
+    }
+    .music-list ul li .row p
+    {
+        font-size: 25px;
+    }
+    .tag_name
+    {
+        left: -20% !important;
+        margin-top: 10% !important;
+    }
+    .controls i
+    {
+        font-size: 50px;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 75px;
+    }
+    .song-details .name
+    {
+        font-size: 40px;
+    }
+    .song-details .artist
+    {
+     font-size: 30px;   
+    }
+    .song-timer span
+    {
+        font-size: 25px;
+    }
+    .progress-area
+    {
+        height: 10px;
+    }
+    .play-pause i
+    {
+        font-size: 75px;
+        padding-right: 15%;
+        padding-top: 2%;
+        height: 70px;
+    }
+    .calendar header .month .year
+    {
+        font-size: 37px;
+    }
+    .calendar header .month 
+    {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:2000px)
+{
+    .carde
+    {
+        margin-bottom: 10% !important;
+    }
+    .para
+    {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (max-width:1600px)
+{
+    .para
+    {
+        font-size: 27px !important;
+    }
+}
+@media only screen and (max-width:1500px)
+{
+    .para
+    {
+        font-size: 25px !important;
+    }
+    .calendar
+    {
+        font-size: 11px;
+    }
+    .carde
+    {
+        margin-bottom: 4% !important;
+    }
+    .tag_name
+    {
+        height: 110px !important;
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width:1350px) {
+    .calendar
+    {
+        font-size: 13px;
+    }
+    .para0
+    {
+        font-size: 30px !important;
+    }
+    .contacte:nth-child(1)
+    {
+        font-size: 14px !important;
+    }
+    .contacte:nth-child(2),.contacte:nth-child(3)
+    {
+        font-size: 16px !important;
+    }
+    .carde
+    {
+        margin-bottom: 0% !important;
+    }
+    .para
+    {
+        font-size: 23px !important;
+    }
+    .tag_name
+    {
+        margin-top: 5% !important;
+        height: 100px !important;
+    }
+    
+}
+
+
+@media only screen and (max-width:1250px)
+{
+    .para0
+    {
+        font-size: 30px !important    }
+    .custom-btn
+    {
+        width: 110px;
+        font-size: 14px;
+    }
+    .btn-11
+    {
+        font-size: 11px;
+    }
+    .controls i
+    {
+        font-size: 20px;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 35px;
+    }
+    .play-pause i
+    {
+        font-size: 45px;
+    }
+    .music-list.show
+    {
+        padding: 6%;
+    }
+    .music-list ul
+    {
+        margin: 3%;
+        padding-left: 6%;
+    }
+    .calendar
+    {
+        font-size: 11px;
+    }
+    .carde
+    {
+        margin-bottom: 0% !important;
+    }
+    .tag_name
+    {
+        height: 120px !important;
+    }
+    .big
+    {
+        max-height: 510px;
+    }
+}
+@media only screen and (max-width:1100px) 
+{
+    .big
+    {
+        max-height: unset;
+    }
+    .input-group
+    {
+        margin-top: 20%;
+    }
+    .btn-7
+    {
+        width: 110px !important;
+    }
+    .para
+    {
+        font-size: 20px !important;
+    }
+    .carde
+    {
+        margin-bottom: 0 !important;
+    }
+    .music-list ul
+    {
+        margin: 0;
+        padding-left: 6%;
+    }
+    .calendar
+    {
+        font-size: 9px;
+    }
+    .para0
+    {
+        font-size: 25px !important;
+    }
+    .head
+    {
+        margin-top: 45% !important;
+    }
+    .none
+    {
+        margin-top: 5%;
+    }
+    .disable
+    {
+        height: 100px !important;
+        margin-top: 7% !important;
+    }
+    ul li .audio-duration
+    {
+        font-size: 12px;
+    }
+    .music-list ul
+    {
+        padding-left: 1%;
+    }
+    .music-list ul li .row span
+    {
+        font-size: 15px;
+    }
+    .music-list ul li .row p
+    {
+        font-size: 10px;
+    }
+    .contacte:nth-child(1)
+    {
+        font-size: 13px !important;
+    }
+    .short
+    {
+        font-size: 16px !important;
+    }
+    .Contact
+    {
+        margin-bottom: 20%;
+        height: 0px;
+    }
+    .big
+    {
+        margin-top: 20%;
+        margin-bottom: 22%;
+    }
+}
+@media only screen and (max-width:991px) 
+{
+    .Contact
+    {
+        display: none !important;
+    }
+    .carde
+    {
+        margin-bottom: 0 !important;
+    }
+    .para
+    {
+        font-size: 30px !important;
+    }
+    .calendar
+    {
+        font-size: 20px;
+    }
+    .wrapper
+    {
+        position: unset !important;
+        bottom: unset;
+        width: 80%;
+    }
+    .controls i
+    {
+        font-size: 50px;
+    }
+    .disable
+    {
+        display: none !important;
+    }
+    .head
+    {
+        margin-top: 15% !important;
+        font-size: 35px !important;
+    }
+    .play-pause i
+    {
+        font-size: 80px;
+        padding-right:12% !important;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 68px;
+    }
+    .contacte:nth-child(1)
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width:770px) 
+{
+    .carde
+    {
+        margin-bottom: 0 !important;
+    }
+    .para
+    {
+        font-size: 25px !important;
+    }
+    .text-center
+    {
+        padding: 0;
+    }
+    .img-area img
+    {
+        width: 70%;
+    }
+    .song-details .name
+    {
+        font-size: 35px;
+    }
+    .song-details .artist
+    {
+        font-size: 30px;
+    }
+    .head
+    {
+        margin-top: 20% !important;
+        font-size: 30px !important;
+    }
+    .navbar-dark .navbar-nav .nav-link
+    {
+        font-size: 16px;
+    }
+    .controls i
+    {
+        font-size: 60px;
+    }
+    .play-pause i
+    {
+        font-size: 85px;
+        margin-right: -5% !important;
+    }
+    .progress-area
+    {
+        margin-top: 5%;
+    }
+    .song-timer span
+    {
+        font-size: 25px;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 65px;
+    }
+    .wrapper
+    {
+        width: 90%;
+    }
+    .music-list ul
+    {
+        padding-left: 0;
+    }
+    .music-list ul li .row span,ul li .audio-duration,.header #close
+    {
+        font-size: 30px;
+    }
+    .music-list ul li .row p
+    {
+        font-size: 25px;
+    }
+    .header .row
+    {
+        margin-bottom: 5%;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:650px) 
+{
+    .head
+    {
+        margin-top: 20% !important;
+        font-size: 30px !important;
+    }
+    .controls i
+    {
+        font-size: 35px;
+    }
+    .play-pause i
+    {
+        font-size: 50px;
+        margin-right: -5% !important;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 40px;
+    }
+    .wrapper
+    {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) 
+{
+    .main
+    {
+        border: none !important;
+        margin: 2% !important;
+        width: 96% !important;
+    }
+    .main::before
+    {
+        border: none !important;
+    }
+    .carde
+    {
+        margin-bottom: 0;
+    }
+    .head
+    {
+        margin-top: 25% !important;
+        font-size: 30px !important;
+    }
+    .controls i
+    {
+        font-size: 45px;
+    }
+    .play-pause i
+    {
+        font-size: 65px;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 60px;
+    }
+    .calendar
+    {
+        font-size: 15px;
+    }
+    .btn-7
+    {
+        width: 100px !important;
+    }
+}
+@media only screen and (max-width:400px) 
+{
+    .head
+    {
+        margin-top: 30% !important;
+        font-size: 25px !important;
+    }
+    .controls i
+    {
+        font-size: 25px;
+    }
+    .play-pause i
+    {
+        font-size: 35px;
+    }
+    .controls i:nth-child(2), .controls i:nth-child(4)
+    {
+        font-size: 25px;
+    }
+    .calendar
+    {
+        font-size: 13px;
+    }
+    .btn-7
+    {
+        width: 70px !important;
+    }
+    .btn-11
+    {
+        width: 100px !important;
+    }
+    .headin
+    {
+        font-size: 35px !important;
+    }
+    .para
+    {
+        font-size: 15px !important;
+    }
+}

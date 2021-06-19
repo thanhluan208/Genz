@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* NAVIGATION AND THEME */
+.DarkBGround{
+    background:linear-gradient(-45deg,#d1d1d1,#c5c5c5,#c2c2c2);
+    background-size: 400%,400%;
+    animation: gradient 6s ease-in-out infinite;
+}
+nav {
+  position: fixed !important;
+  z-index: 1000;
+  width: 80%;
+  left: 10%;
+  top: 6%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 0, 0, 0.5)  !important;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  color: rgba(0, 0, 0, 0.5);
+  animation-delay: 2s;
+  width: 150%;
+}
+
+.disable
+{
+  display: none;
+}
+.dud {
+  color: #757575;
+}
+#IconContainer
+{
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  z-index: 1000;
+  flex-direction:unset;
+  margin-left: 5%; 
+  margin-bottom: 2%;
+}
+#IconContainer #icon
+{
+  position: relative;
+  list-style: none ;
+  margin-left: 10%;
+  background-color: transparent;
+  display: unset;
+  padding: 0;
+}
+#IconContainer #icon #link 
+{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+#IconContainer #icon #link:hover
+{
+  transform: translateY(-20px);
+}
+#IconContainer #icon #link::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+#IconContainer #icon #link:hover::before
+{
+  transform: skewX(45deg) translateX(-150px);
+}
+@keyframes gradient {
+  0%
+  {
+      background-position:0 50%;
+  }
+  50%
+  {
+      background-position: 100% 50%;
+  }
+  100%
+  {
+      background-position: 0 50%;
+  }
+}
+#sec1
+{
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 5%;
+}
+/* PROGRESSBAR */
+::-webkit-scrollbar
+{
+    width: 0;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: rgba(255, 255, 255, 1);
+}
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top,#a7a7a7,#818181,#646464,#7c7c7c,#a8a8a8);
+}
+#progressbar:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#a7a7a7,#818181,#646464,#7c7c7c,#a8a8a8);
+    filter: blur(10px);
+}
+#progressbar:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#a7a7a7,#818181,#646464,#7c7c7c,#a8a8a8);
+    filter: blur(30px);
+}
+/* DARKMODE BUTTON */
+.darkmode
+{
+    overflow: hidden;
+    background:linear-gradient(-45deg,#272727,#1d1d1d,#272727);
+    background-size: 400%,400%;
+    animation: gradient 6s ease-in-out infinite;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    border-radius: 50%;
+    border: none;
+    right: unset;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}

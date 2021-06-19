@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>4GenZ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="session1.css">
+    <link rel="stylesheet" href="Article.css">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+
+</head>
+<style>
+</style>
+<body id="body" >
+    <div id="scrollPath" ></div>
+    <div id="progressbar" ></div>
+    <div class="container-fluid-sm heading " id="navbar" style="padding-left:2%;padding-right:2%;transition: opacity 250ms ease-in;">
+        <nav class="navbar navbar-expand-xl navbar-dark DarkBorder" id="nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: 1px solid rgba(255, 102, 0, 0.925);z-index: 1000;">
+            <span class="navbar-toggler-icon" style = "color: rgba(255, 102, 0, 0.925);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="width: 100%;">
+              <div class="row">
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link "  style="color: rgba(255, 102, 0, 0.925) !important;font-weight: bolder;"  href="index.html">Home</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center"> 
+                  <li class="nav-item">
+                    <a class="nav-link DarkText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">University</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link DarkText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="catalog.html">Clubs</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link DarkText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Events</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link DarkText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Article</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link DarkText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="About.html">About us</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>  
+        </nav>   
+      </div>
+      <div class="row" style="padding-top: 10%;">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 " style="display: flex;justify-content:center;align-items:center;">
+            <div class="text"></div>
+          </div>
+          <div class="col-lg-1"></div>  
+      </div>
+      <div class="row">
+        <div class="col-lg-1"></div>
+          <div class="col-lg-10 " style="display: flex;justify-content:center;align-items:center;">
+                  <div class="div"> <span id="Days"></span> <span>Days</span></div>
+                  <div class="div"> <span id="Hours"></span> <span>hour</span></div>
+                  <div class="div"> <span id="Minutes"></span> <span>Minutes</span></div>
+                  <div class="div"> <span id="Seconds"></span> <span>Seconds</span></div>
+            </div>
+          <div class="col-lg-1"></div>  
+      </div>
+        
+        <ul id="IconContainer" class="list-group fade-in">
+          <li id="icon"class="list-group-item"><a class="list-item DarkText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="https://www.facebook.com/luandangyeu1/" id="link"><i class="fab fa-facebook-f" ></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item DarkText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="#" id="link"><i class="fab fa-instagram "  ></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item DarkText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" id="link" ><i class="fas fa-envelope hard" onclick="myFunction1()" data-tippy-content = "luandthe160124@fpt.edu.vn"></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item DarkText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="#" id="link"><i class="fas fa-phone hard" onclick="myFunction2()" data-tippy-content = "113/114/115"></i></a></li>
+        </ul>
+    <a href="https://www.hitwebcounter.com" target="_blank" style="position: absolute;bottom: 0;display: none;">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=7814065&style=0036&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                                 
+    
+      <input type="text" style="border: transparent;background: transparent;color: transparent;" value="luandthe160124@fpt.edu.vn" id="myInput1">
+        <input type="text" style="border: transparent;background: transparent;color: transparent;" value="113" id="myInput2">
+
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+      <script src="Article.js"></script>
+      
+</body>
+</html>

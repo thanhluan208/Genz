@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>FPT university</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+</head>
+<style>
+    body {
+  height: auto;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  background: #000000;
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #005a2b;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b456;
+}
+
+
+.wrapper {
+  border: 1px solid #000000;
+  height: calc(100vh - 2px);
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  width: calc(100vw - 2.55px);
+}
+
+.scroll-top {
+  background: #005a2b;
+  border: 0;
+  border-radius: 50%;
+  bottom: 0;
+  cursor: pointer;
+  height: 50px;
+  margin: 15px;
+  opacity: 0.75;
+  position: fixed;
+  right: -70px;
+  transition: right 0.2s ease-in-out;
+  width: 50px;
+  z-index: 99;
+}
+.scroll-top.visible {
+  right: 0;
+}
+
+.arrow {
+  border: solid #000000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px;
+}
+.arrow.up {  
+  transform: rotate(-135deg);
+}
+
+.content-container {
+  display: flex;
+  height: 300px;
+  width: 100%
+}
+
+.content {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: auto;
+}
+</style>
+<body>
+
+     
+    <button class="scroll-top">
+        <div class="arrow up"></div>
+      </button>
+      <div class="content-container">
+        <div class="content" id = "top">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+      <div class="content-container">
+        <div class="content">CONTENT GOES HERE</div>    
+      </div>
+
+
+      <script>
+          // NOTICE: This pen may appear to not work on mobile devices, but it is  due to the codepen footer and the browser's bottom menu bar that hide the button. It should work fine when implemented for your website
+
+// used to avoid using 255, thus generating white-ish backgrounds that make text unreadable
+const colorMax = 192;
+
+// gets the breakpoint at which the scroll-to-top button should appear
+const scrollBreakpoint = window.innerHeight * 0.9;
+
+document.addEventListener('DOMContentLoaded', () => {
+  randomizeBackgrounds();
+  setupScrollListener();
+  setupScrollEvent();  
+});
+
+// scrolls window to top
+function setupScrollEvent() {
+  const scrollButton = document.querySelector('.scroll-top');
+  
+  scrollButton.addEventListener('click', (e) => {
+    // not the best solution until Safari/Edge support scroll behavior
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Thanks to Geroge Daniel https://stackoverflow.com/questions/51229742/javascript-window-scroll-behavior-smooth-not-working-in-safari
+    smoothVerticalScrolling(scrollButton.parentElement, 250, "top");
+  });
+}
+
+// prepares the window for a scroll event to show the scroll button
+function setupScrollListener() {  
+   window.addEventListener('scroll', (e) => {
+     const scrollButton = document.querySelector('.scroll-top');
+     
+     // const scrollOffset = document.scrollingElement.scrollTop;
+     const scrollOffset = window.scrollY;
+    
+     if (scrollOffset >= scrollBreakpoint) {
+       scrollButton.classList.add('visible');
+     } else if (scrollOffset <= 0) {
+       scrollButton.classList.remove('visible');
+     }    
+  });
+}
+
+function randomizeBackgrounds() {
+  // get all the content containers
+  const contentContainers = document.querySelectorAll('.content-container');
+  
+  [].forEach.call(contentContainers, container => {
+    // assign random background
+    container.style.background = `rgb(${randVal(colorMax)},${randVal(colorMax)},${randVal(colorMax)})`;
+  });
+}
+
+// random between 0 to max
+function randVal(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+// uses a timeout to scroll to top
+function smoothVerticalScrolling(e, time, where) {
+  // gets the element's top position relative to the viewport
+  const eTop = e.getBoundingClientRect().top;
+  
+  // divides the top offset into 100 steps to be ellapsed
+  const eAmt = eTop / 100;
+  
+  // starting time
+  let curTime = 0;
+  
+  // not to exceed the desired duration
+  while (curTime <= time) {
+    // call a function to execute at one hundreth of the desired scroll time
+    window.setTimeout(SVS_B, curTime, eAmt, where);
+    // increase by one hundreth of the desired time to execute exactly 100 times
+    curTime += time / 100;
+  }
+}
+
+function SVS_B(eAmt, where) {
+  // scroll by half the hundredth of the top offset if destination is not top (since to center only involves scrolling either in the top or bottom half of the window)
+  if(where == "center" || where == "") {
+    window.scrollBy(0, eAmt / 2); 
+  }
+  // otherwise scroll the full amount
+  if (where == "top") {
+    window.scrollBy(0, eAmt/10);
+  }    
+}
+      </script>
+</body>
+</html>

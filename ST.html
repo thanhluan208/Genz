@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Software Technology</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+    <link rel="stylesheet" href="vovinam.css">
+
+</head>
+<style>
+    .content::before
+    {
+        content: none;
+        background: none;
+    }
+    thead tr th:nth-child(1)
+    {
+        width: 15%;
+    }
+    thead tr th:nth-child(2)
+    {
+        width: 25%;
+    }
+    tbody tr td:nth-child(1)
+    {
+        font-weight: 500;
+    }
+</style>
+<body   >
+      
+    <img id="img" src="Fluid.png" class="img-fluid" style="position: fixed;height: 100%;width: 100%;top: 0;" alt="">
+    <div class="row main" style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin:5%;margin-left: 2%;border-radius: 20px;width: 95%;margin-top: 2%;height: 90vh;">
+        <div class="col-lg-1 column1" style="padding-left:0;padding-right: 0;border-top-left-radius: 20px;border-bottom-left-radius: 20px;background: rgba(255,255,255,0.8);backdrop-filter: blur(4px);height: 100%;" >
+            <div class="container logo">
+                <img src="favicon.png" class="img-fluid" alt="">
+                
+            </div>
+            <div class="navi_str" style="display: inline-grid;margin-top: 70%;width: 100%;">
+                <a class="navi" href="index.html"><i class="fas fa-home"></i></a>
+                <a class="navi" href="test.html"><i class="fas fa-university"></i></a>
+                <a  class="navi" href=""><i class="far fa-calendar-check"></i></a>
+                <a class="navi" href=""><i class="far fa-newspaper"></i></a>
+                <a class="navi" href="About.html"><i class="fas fa-users"></i></a>
+            </div>
+            
+            <div class="quit"><a href="university.html"><i class="fas fa-power-off"></i></a></div>
+        </div>
+        <div  class="col-lg-8 content" >
+            <div  style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;">
+                <img src="software_tech.jpg" style="width: 90%; height: 50%;border-radius: 10px;" alt="">
+            </div>
+            <h1 class="heading">
+                ST - Software Technology
+            </h1>
+            <p class="para">Theo thống kê của VietnamWorks, nhu cầu nhân lực ngành Công nghệ Thông tin của Việt Nam đang đạt mức cao nhất trong lịch sử. <span style="color: #000;font-weight: 600;"> Tới năm 2020, Việt Nam thiếu hụt hơn 500.000 nhân sự IT</span>. Cùng với sự xuất hiện của cuộc Cách mạng Công nghiệp 4.0 đã thực sự tạo nên cơn "khát" nhân lực Công nghệ Thông tin. Mức lương phổ biến của sinh viên mới ra trường từ 8 triệu - 11,2 triệu đồng/ tháng, quản lý từ 22 - 45 triệu đồng/ tháng và từ 67,5 triệu đồng/ tháng trở lên đối với vị trí giám đốc. Mặt bằng chung,<span style="color: #000;font-weight: 600;"> mức lương ngành Công nghệ Thông tin luôn nằm trong top 10 ngành nghề có thu nhập cao nhất.</span>
+            </p>
+            <p class="para"> <span style="color: #000;font-weight: 600;">Học ngành Kỹ thuật phần mềm cần chuẩn bị gì?</span> <br>  Toán, toán và rất nhiều kiến thức về toán. Cũng giống như hầu hết các môn hay ngành nào trong lĩnh vực Công nghệ thông tin, các bạn đều phải hiểu rõ và áp dụng toán để giải quyết các vấn đề, bên cạnh đó việc học toán hiệu quả cũng sẽ giúp bộ não bạn rèn luyện tư duy tốt hơn. <br><br> Tiếp theo cũng là 1 môn rất quen thuộc nhưng có lẽ không phải bạn học sinh theo ngành kỹ thuật nào cũng giỏi, đó là tiếng Anh. Thực sự tiếng Anh chuyên ngành CNTT ban đầu là 1 môn khó xơi, nhưng bạn nên tập làm quen dần và rèn dũa mỗi ngày. Để tiến xa với ngành thì bạn cũng nên có khả năng đọc hiểu tốt, vì hầu hết các tài liệu quan trọng của ngành CNTT đều được viết bằng tiếng Anh <br><br> Cuối cùng nhưng cũng không kém phần quan trọng là kỹ năng tự học, tự tìm tòi. Kiến thức trên giảng đường thường chỉ là phần thiết yếu, để các bạn hiểu rõ về nguyên lý cũng như cách vận hành. Công nghệ ngày nay luôn được cập nhật và cải tiến mỗi ngày, các thầy cô cũng không thể luôn chạy theo xu hướng mới nhất được mà các bạn phải tự tập làm điều đó. Tính tò mò và đam mê luôn là 1 lợi thế lớn.</p>
+            <p class="para">
+                Mặc dù cơ hội nghề nghiệp ngành Kỹ thuật Phần mềm rộng mở với mức lương khá cao so với nhiều ngành nghề khác nhưng có một thực tế cần được nhìn nhận là nhân lực ngành Kỹ thuật Phần mềm lại khá khan hiếm, đặc biệt là nguồn nhân lực chất lượng cao có khả năng về chuyên môn và thành thạo ngoại ngữ.
+            </p>
+            <h1 class="heading">Lộ trình đào tạo</h1>
+            <table class="table table-striped table-bordered">
+                
+                <thead  style="background: #ff8800;color: #fff;font-weight: 500;">
+                    <tr style="text-align: center;">
+                        <th>Học Kỳ</th>
+                        <th>Học Phần</th>
+                        <th>Kỹ Năng Đạt Được</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            NỀN TẢNG
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Định hướng + Rèn luyện tập trung
+                                </li>
+                                <li>
+                                    Phương pháp học Đại học hiệu quả
+                                </li>
+                                <li>
+                                    Vovinam
+                                </li>
+                                <li>
+                                    01-05 Level tiếng Anh
+                                </li>
+                                <li>
+                                    Học kỳ tiếng Anh tại nước ngoài
+                                </li>
+                                <li>
+                                    Nhạc cụ truyền thống
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên có phương pháp học Đại học hiệu quả như: tự
+                                    học, làm việc nhóm, quản lý thời gian, tối ưu hoá năng
+                                    lực não bộ cải thiện kết quả học tập.
+                                </li>
+                                <li>
+                                    Sinh viên đạt trình độ tiếng Anh tương đương IELTS 6.0
+                                    hoặc TOEFL iBT 80.
+                                </li>
+                                <li>
+                                    Sinh viên tự tin đọc hiểu giáo trình, học tập hoàn toàn
+                                    bằng tiếng Anh, giao tiếp thông thạo với giảng viên và
+                                    sinh viên quốc tế.
+                                </li>
+                                <li>
+                                    Sinh viên có tinh thần rèn luyện thể chất, phát triển
+                                    cá nhân toàn diện.
+                                </li>
+                                <li>
+                                    Sinh viên tìm hiểu về giá trị của âm nhạc truyền thống,
+                                    sinh viên có thể chơi một số nhạc cụ truyền thống như
+                                    sáo, nhị, tỳ bà... Sinh viên tự tin hơn trước đám đông,
+                                    rèn luyện những thói quen tốt: kiên trì và tỉ mỉ
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 1
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Nhập môn khoa học máy tính
+                                </li>
+                                <li>
+                                    Tổ chức và Kiến trúc máy tính
+                                </li>
+                                <li>
+                                    Cơ sở lập trình Toán cho ngành kỹ thuật
+                                </li>
+                                <li>
+                                    Kỹ năng học tập đại học
+                                </li>
+                                <li>
+                                    Vovinam 2
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên có bức tranh tổng thể về CNTT thông qua các
+                                    khái niệm cơ bản: lịch sử phát triển, công cụ, kiến
+                                    trúc phần cứng, phần mềm, hệ điều hành, mạng và
+                                    Internet, cấu trúc dữ liệu...
+                                </li>
+                                <li>
+                                    Sinh viên tìm hiểu về kiến trúc và tổ chức máy tính:
+                                    bao gồm các chủ đề về thiết kế vật lý của máy tính (tổ
+                                    chức) và thiết kế lôgic của máy tính (kiến trúc).
+                                </li>
+                                <li>
+                                    Sinh viên được học về các ngôn ngữ lập trình, ngôn ngữ
+                                    C; quá trình phát triển phần mềm; lập trình căn bản
+                                    dùng C.
+                                </li>
+                                <li>
+                                    Sinh viên được tăng cường các kiến thức cơ bản của giải
+                                    tích và đại số tuyến tính và các ứng dụng của chúng
+                                    trong khoa học, kỹ thuật. Sinh viên được trang bị
+                                    phương pháp học đại học hiệu quả.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 2
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Hệ điều hành
+                                </li>
+                                <li>
+                                    Mạng máy tính
+                                </li>
+                                <li>
+                                    Lập trình hướng đối tượng
+                                </li>
+                                <li>
+                                    Toán rời rạc
+                                </li>
+                                <li>
+                                    Kỹ năng giao tiếp và cộng tác
+                                </li>
+                                <li>
+                                    Vovinam 3
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên được giới thiệu về hệ điều hành, nắm được các
+                                    kiến thức về hệ thống mạng máy tính, kiến trúc mạng,
+                                    các mô hình tham chiếu, các giao thức, họ giao thức
+                                    TCP/IP, một số kiến thức cơ bản về an ninh mạng.
+                                </li>
+                                <li>
+                                    Sinh viên có kiến thức nền tảng toán học cho khoa học
+                                    máy tính.
+                                </li>
+                                <li>
+                                    Sinh viên được trang bị kỹ năng làm việc nhóm, bao gồm
+                                    cả cách làm việc, triển khai, trao đổi các chiến lược
+                                    và giao tiếp trong nhóm hiệu quả.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 3
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Các hệ cơ sở dữ liệu
+                                </li>
+                                <li>
+                                    Thiết kế Web
+                                </li>
+                                <li>
+                                    Thực hành OOP với Java
+                                </li>
+                                <li>
+                                    Cấu trúc dữ liệu và giải thuật
+                                </li>
+                                <li>
+                                    Ngoại ngữ 2 : Tiếng Nhật 1
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên có kiến thức về các hệ cơ sở dữ liệu với các
+                                    mô hình cơ sở dữ liệu quan hệ.
+                                </li>
+                                <li>
+                                    Sinh viên hiểu về Ngôn ngữ Đánh dấu Siêu văn bản để tạo
+                                    các trang web, Cascading Style Sheets, Javascript.
+                                </li>
+                                <li>
+                                    Sinh viên được thực hành các bài lập trình hướng đối
+                                    tượng với ngôn ngữ Java.
+                                </li>
+                                <li>
+                                    Sinh viên nắm vững các khái niệm cơ bản về cấu trúc dữ
+                                    liệu và các thuật toán được cài đặt cho các cấu trúc dữ
+                                    liệu, sử dụng ngôn ngữ Java để minh họa.
+                                </li>
+                                <li>
+                                    Sinh viên sử dụng Tiếng Nhật ở mức độ căn bản: đọc,
+                                    viết, giao tiếp ở môi trường làm việc.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 4
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Phát triển ứng dụng Java web
+                                </li>
+                                <li>
+                                    Nhập môn kỹ thuật phần mềm
+                                </li>
+                                <li>
+                                    Internet vạn vật
+                                </li>
+                                <li>
+                                    Xác suất thống kê Ngoại ngữ 2 : Tiếng Nhật 2
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên biết cách xây dựng các ứng dụng web phức tạp
+                                    trong môi trường doanh nghiệp, được giới thiệu về Java
+                                    Enterprise Edition.
+                                </li>
+                                <li>
+                                    Sinh viên có kiến thức chung về các tiến trình và vòng
+                                    đời trong Kỹ thuật phần mềm và quản lý các dự án.
+                                </li>
+                                <li>
+                                    Sinh viên được tiếp cận với các kiến thức cơ bản của
+                                    Internet vạn vật.
+                                </li>
+                                <li>
+                                    Sinh viên sử dụng Tiếng Nhật ở mức độ nâng cao: đọc,
+                                    viết, giao tiếp ở môi trường làm việc.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 5
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Lập trình di động
+                                </li>
+                                <li>
+                                    Yêu cầu phần mềm
+                                </li>
+                                <li>
+                                    Kiểm thử phần mềm
+                                </li>
+                                <li>
+                                    Quản trị dự án
+                                </li>
+                                <li>
+                                    Đạo đức trong CNTT
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên có đủ kiến thức cơ bản về lập trình Android
+                                    để sinh viên có thể phát triển các ứng dụng hữu ích
+                                    cũng như tự học thêm dễ dàng hơn.
+                                </li>
+                                <li>
+                                    Sinh viên biết cách Quản trị dự án nói chung và dự án
+                                    CNTT nói riêng một cách hiệu quả.
+                                </li>
+                                <li>
+                                    Sinh viên nắm vững các vấn đề liên quan đến đạo đức của
+                                    người làm CNTT và người dùng CNTT, sở hữu trí tuệ, an
+                                    toàn và bảo mật, tội phạm máy tính và Internet…
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 6
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Thực tập làm việc thực tế tại doanh nghiệp
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên làm việc thực tế từ 4 – 8 tháng tại các công
+                                    ty thành viên thuộc tập đoàn FPT hoặc hơn 300 doanh
+                                    nghiệp là đối tác của tập đoàn FPT trên toàn thế giới.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 7
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    UI/IX
+                                </li>
+                                <li>
+                                    Kiến trúc và Thiết kế phần mềm
+                                </li>
+                                <li>
+                                    Phương pháp nghiên cứu
+                                </li>
+                                <li>
+                                    Môn chuyên ngành tự chọn 1
+                                </li>
+                                <li>
+                                    Môn chuyên ngành tự chọn 2
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên hiểu rõ nguyên tắc tâm lý của giao tiếp người
+                                    máy, Đánh giá giao diện người sử dụng. Phân tích nhiệm
+                                    vụ, thiết kế hướng người sử dụng, mô hình hóa và các
+                                    công nghệ liên quan.
+                                </li>
+                                <li>
+                                    Sinh viên nắm vững các phương pháp luận quan trọng về
+                                    thiết kế phần mềm, các kiểu kiến trúc phần mềm, hướng
+                                    dẫn thiết kế và công cụ thiết kế.
+                                </li>
+                                <li>
+                                    Sinh viên được trang bị một số phương pháp nghiên cứu
+                                    hữu ích, điểm mạnh và điểm yếu của các phương pháp
+                                    luận, các thức thiết kế và thực hiện dự án nghiên cứu
+                                    để sinh viên có thể tự thực hiện các dự án nghiên cứu
+                                    sau này.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 8
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Dự án phát triển ứng dụng
+                                </li>
+                                <li>
+                                    Môn chuyên ngành tự chọn 3
+                                </li>
+                                <li>
+                                    Môn chuyên ngành tự chọn 4
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Sinh viên có kiến thức của vai trò Quản lý dự án
+                                        như: Lập kế hoạch, dự đoán các rủi ro, điều phối
+                                        nhân lực và chia công việc. Ngoài ra, các kiến thức
+                                        về quản lý nhân sự, phối hợp nhân viên, xử lý xung
+                                        đột sẽ được cung cấp để nâng cao kinh nghiệm cho
+                                        việc quản lý.
+                                    </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HỌC KỲ 9
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Khóa luận tốt nghiệp
+                                </li>
+                                <li>
+                                    Khởi sự doanh nghiệp
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Sinh viên thực hiện và sở hữu đồ án/ứng dụng/mô hình
+                                    kinh doanh dịch vụ của riêng mình.
+                                </li>
+                                <li>
+                                    Sinh viên tự tin làm việc tại hầu hết các quốc gia trên
+                                    thế giới.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-2" style="margin-left: 2%;">
+            <div class="container contact">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fas fa-envelope"></i></a>
+                <a href=""><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="title_str" >
+                <h1 class="title" style="font-size: 25px;text-align: center;color: #fff">Cơ hội việc làm</h1>
+            </div>
+            <div class="clubs_str">
+                <div class="clubs-list container">
+                    <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Project Management</h2>
+                    <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Quản lý dự án</a>
+                </div>
+                <div class="clubs-list container">
+                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Management techniques</h2>
+                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Quản lý kỹ thuật</a>
+                </div>
+                <div class="clubs-list container">
+                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Tester</h2>
+                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Kiểm thử phần mềm </a>
+                </div>
+                <div class="clubs-list container">
+                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Researcher</h2>
+                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Nhà nghiên cứu </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="position: absolute;bottom: -6%;right: 21%;height: 100px;width: 67%;border-radius: 20px;">
+            <div class="col-lg-6 " id="mp3" style="display: flex;justify-content:center;padding: 0;">
+                <div class="container wrapper BG" id="contain"  >
+                    <i class="fas fa-caret-square-down disappear" id="drop" onclick="disappear()" style="position: absolute;top: 2%;right: 2%;font-size: 37px;color: #fff;    transition: all 1s cubic-bezier(0.5, 0.5, 0.5, 0.5);"></i>
+                    <div class="song-details disappear" id="song-details">
+                      <p class="name"></p>
+                      <p class="artist"></p>
+                    </div>
+                    <div class="img-area margin" id="img-area">
+                      <img src="" class="img-fluid" alt="">
+                    </div>
+                    <div class="progress-area disappear" id="progress-area">
+                      <div class="progress-bar">
+                        <audio id="main-audio" src=""></audio>
+                      </div>
+                      <div class="song-timer">
+                        <span class="current-time">0:00</span>
+                        <span class="max-duration">0:00</span>
+                      </div>
+                    </div>
+                    <div class="controls ">
+                      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                      <i id="prev" class="material-icons">skip_previous</i>
+                      <div class="play-pause">
+                        <i class="material-icons play" id="play" >play_arrow</i>
+                      </div>
+                      <i id="next" class="material-icons">skip_next</i>
+                      <i id="more-music" class="material-icons" onclick="appear()">queue_music</i>
+                    </div>
+                    <div class="music-list " >
+                        <div class="header">
+                          <div class="row" style="display:block;justify-content: left;float: left;flex: none;">
+                            <i class= "list material-icons">queue_music</i>
+                            <span>Music list</span>
+                          </div>
+                          <i id="close" class="material-icons">close</i>
+                        </div>
+                        <ul>
+                          <!-- here li list are coming from js -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-6"></div>
+    </div>
+    
+ 
+    
+    
+   
+
+    <script>
+        var song_details = document.getElementById('song-details')
+        var img_area = document.getElementById('img-area')
+        var progress_area = document.getElementById('progress-area')
+        var mp3 = document.getElementById('mp3')
+        var play = document.getElementById('play')
+        var contain = document.getElementById('contain')
+        var drop = document.getElementById('drop')
+        function appear()
+        {
+            song_details.classList.remove('disappear')
+            img_area.classList.remove('margin')
+            progress_area.classList.remove('disappear')
+            contain.classList.remove('BG')
+            drop.classList.remove('disappear')
+        }
+        function disappear()
+        {
+            song_details.classList.add("disappear")
+            img_area.classList.add('margin')
+            progress_area.classList.add("disappear")
+            contain.classList.add('BG')
+            drop.classList.add("disappear")
+        }
+    </script>
+    
+   
+
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+     
+      
+</body>
+</html>

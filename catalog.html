@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>4GenZ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="session1.css">
+    <link rel="stylesheet" href="media_catalog.css">
+    <link rel="stylesheet" href="GlowingText.css">
+    <link rel="stylesheet" href="GlassCard.css">
+    <link rel="stylesheet" href="button.css">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+
+</head>
+<style>
+</style>
+<body id="body" class="DarkBGround">
+      <!-- <img src="Fluid.png" class="img-fluid" alt=""> -->
+    <div id="scrollPath"  style="position: absolute;z-index: 10000;" ></div>
+    <div id="progressbar" style="z-index: 1000;position: absolute;"></div>
+    <div class="container">
+      <div class=" LightBGround" id="Switch" onclick="Switch()" >🌝</div>
+    </div>
+    <div class="container-fluid-sm heading " id="navbar" style="padding-left:2%;padding-right:2%;transition: opacity 250ms ease-in;">
+        <nav class="navbar navbar-expand-xl navbar-dark" id="nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: 1px solid rgba(255, 102, 0, 0.925);z-index: 1000;">
+            <span class="navbar-toggler-icon" style = "color: rgba(255, 102, 0, 0.925);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="width: 100%;">
+              <div class="row">
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText "  style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="index.html">Home</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center"> 
+                  <li class="nav-item">
+                    <a class="nav-link LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">University</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText "  style="color: rgba(255, 102, 0, 0.925) !important;font-weight: bolder;" href="catalog.html">Clubs</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">    
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Events</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Article</a>
+                  </li>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="About.html">About us</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>  
+        </nav>   
+      </div>
+    <img src="Fluid.png" class="img-fluid" style="position: fixed;height: 100%;" alt="">
+    <section class="enable " id="sec1" style="position: absolute;z-index: 100;margin-bottom: 5%;">
+        <!-- CONTACT -->
+        <ul id="IconContainer" class="list-group fade-in">
+          <li id="icon"class="list-group-item"><a class="list-item LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="https://www.facebook.com/luandangyeu1/" id="link"><i class="fab fa-facebook-f" ></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="#" id="link"><i class="fab fa-instagram "  ></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" id="link" ><i class="fas fa-envelope hard" onclick="myFunction1()" data-tippy-content = "luandthe160124@fpt.edu.vn"></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="#" id="link"><i class="fas fa-phone hard" onclick="myFunction2()" data-tippy-content = "113/114/115"></i></a></li>
+        </ul>
+      <!-- VÕ THUẬT -->
+      <div class="row LightText" id="top" style="padding-bottom: 10%;">
+        <div class="col-lg-1"></div>
+          <div class="col-lg-10 cont1 group LightText" style="padding-bottom: 0;padding-left: 0;padding-right: 0;">
+            <div class="mast__header from-left fade-in">
+              <h1 class="mast__title  " style="text-align:center;padding-bottom: 3%;">Các CLB Võ Thuật</h1> 
+              <p class="mast__text " style="text-align: center;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur eaque exercitationem ullam quod?Minus beatae assumenda voluptas velit quis rerum inventore esse exercitationem doloremque aliquid impedit, labore               
+              </p>
+              </div>
+          </div>
+          <div class="col-lg-1"></div>  
+        <!-- Vovinam -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="martial.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Vovinam</h3>
+                    <p>FPTU Vovinam Club (FVC) là câu lạc bộ võ thuật của trường Đại học FPT, được thành lập từ 6/6/2009. Là một trong những CLB lâu đời và có bảng thành tích nhiều nhất nhì xứ Hola, FVC luôn giữ trong mình tinh thần võ đạo và nhiệt huyết, gắn liền với slogan "Pain is temporary - Glory lasts forever</p>
+                    <a href="https://www.facebook.com/fvchn/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAEKWONDO -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="taekwondo.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">TAEKWONDO</h3>
+                    <p>Có cơ hội tìm hiểu thêm về loại hình thể thao là bộ môn võ thuật,đến tham gia tập võ và xả các năng lượng tiêu cực sẽ giúp bạn giải trí và giảm stress hiệu quả, tạo mối quan hệ thân thiện với nhiều người, tham gia các kỳ thi thăng đai đẳng, thi đấu trong tỉnh, quốc gia.</p>
+                    <a href="https://www.facebook.com/FPT.Psy/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Muay Thai -->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="muay.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Muay Thai</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/fmuc.fptu/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- THỂ THAO -->
+      <div class="row LightText " style="margin-bottom: 10%;">
+        <div class="col-lg-1"></div>
+          <div class="col-lg-10 cont1 group LightText" style="padding-bottom: 0;padding-left: 0;padding-right: 0;">
+            <div class="mast__header from-right fade-in">
+              <h1 class="mast__title  " style="text-align:center;padding-bottom: 3%;">Các CLB Thể Thao</h1> 
+              <p class="mast__text " style="text-align: center;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur eaque exercitationem ullam quod?Minus beatae assumenda voluptas velit quis rerum inventore esse exercitationem doloremque aliquid impedit, labore               
+              </p>
+              </div>
+          </div>
+          <div class="col-lg-1"></div>  
+        <!-- Basketball -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="basketball.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">FPT Basketball Club</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/FPTBasketballClub" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Football -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="soccer.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">FPT Football Club</h3>
+                    <p>Đây là câu lạc bộ bóng đá độc nhất của trường đại học FPT với đông đảo các thành viên tham gia trong 3 năm trở lại đây. Câu lạc bộ được thành lập nên nhằm tạo ra sân chơi cho những người đam mê môn thể thao vua.. Câu lạc bộ như một mái nhà thứ 2 giúp sinh viên cán bộ rèn luyện sức khỏe, đùm bọc lẫn nhau khi xa nhà.</p>
+                    <a href="https://www.facebook.com/fu.football.team" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- BADMINTON -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="badminton.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">FPTU Badminton</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/FPTUbadminton/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- STREET WORKOUT -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="bar.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Street Workout Club</h3>
+                    <p>Không bị bó buộc bởi phòng tập và máy móc, chỉ đơn giản với những thanh xà đơn và xà kép. FU Street Workout là nơi tập trung các bạn trẻ yêu thích Calisthenics và Street Workout tại khuôn viên KTX Hòa Lạc - Đại học FPT.</p>
+                    <a href="https://www.facebook.com/FuStreetWorkout" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- GYM -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="gym.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Gym Club</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam possimus ipsam ab consectetur, quia vitae nostrum qui atque nobis dicta odit deserunt necessitatibus ducimus hic maiores non rem amet dignissimos?</p>
+                    <a href="https://www.facebook.com/FuStreetWorkout" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- ESPORT -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="esports.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">FPTU Esport Club</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/ESCFUHL" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- SKATE -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="skateboard.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">FPTU ISkate</h3>
+                    <p> Không chỉ là một clb của những bạn trẻ mang trong mình đam mê trượt ván mà ISC còn là một đại gia đình với các đàn anh đàn chị cùng những người em mang trong mình nhiệt huyết của tuổi trẻ, đam mê với bộ môn skateboard.</p>
+                    <a href="https://www.facebook.com/FPTUISkate/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- VOLEYBALL -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="voleyball.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Fpt Volleyball Club</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/FptVolleyballClub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- CỜ VÂY -->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="Go.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">CLB Cờ Vây</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/fptgoclub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- CÔN NHỊ KHÚC -->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="nunchaku.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">CLB Côn Nhị Khúc</h3>
+                    <p>Đến với FNC - Nunchaku Club, bạn không chỉ có được một  vũ khí tự vệ, một sức khỏe dẻo dai, khả năng tập trung và sáng tạo mà còn mất đi những áp lực lẫn nỗi buồn vì đến với FNC, bạn đã là thành viên trong đại gia đình không “rùa”.                    </p>
+                    <a href="https://www.facebook.com/nunchaku.fnc//" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Kickfit -->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="kickboxer.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Kickfit</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste eligendi id? Incidunt architecto facilis quos eaque ea animi facere sequi eveniet temporibus error, ex nihil, commodi, sit porro id?</p>
+                    <a href="https://www.facebook.com/nunchaku.fnc//" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- XÃ HỘI -->
+      <div class="row LightText" style="margin-bottom: 10%;">
+        <div class="col-lg-1"></div>
+          <div class="col-lg-10 cont1 group LightText " style="padding-bottom: 0;padding-left: 0;padding-right: 0;">
+            <div class="mast__header from-left fade-in">
+              <h1 class="mast__title  " style="text-align:center;padding-bottom: 3%;">Các CLB Xã Hội</h1> 
+              <p class="mast__text " style="text-align: center;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur eaque exercitationem ullam quod?Minus beatae assumenda voluptas velit quis rerum inventore esse exercitationem doloremque aliquid impedit, labore               
+              </p>
+              </div>
+          </div>
+          <div class="col-lg-1"></div>  
+        <!-- UNICAMP -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="songkran.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">UNICAMP</h3>
+                    <p>UNICAMP là trại hè được tổ chức dành cho các em học sinh trong độ tuổi THPT có cơ hội được trải nghiệm, học tập, vui chơi, sinh hoạt trong khuôn viên kí túc xá như những sinh viên đại học.</p>
+                    <a href="https://www.facebook.com/FU.Business/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- BUSSINESS -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="bussiness.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">FU Bussiness</h3>
+                    <p>Câu lạc bộ Kinh Doanh môi trường cho cộng đồng sinh viên của ngành Kinh tế nói riêng và toàn trường nói chung có niềm yêu thích với lĩnh vực kinh doanh được tự do giao lưu, học hỏi kinh nghiệm và phát triển bản thân</p>
+                    <a href="https://www.facebook.com/FU.Business/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- iGo -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="heart.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">iGo</h3>
+                    <p>Có người nói chúng tôi là 1 đội chưa đủ tầm để thành 1 tổ chức tình nguyện vì cộng đồng. Nhưng với lòng nhiệt huyết của các tình nguyện viên chúng tôi sẵn sàng góp sức trẻ, giúp cuộc sống của những bất hạnh trên thế giới này có thêm giây phút ấm áp từ chính những người Việt trẻ.</p>
+                    <a href="https://www.facebook.com/iGoClub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- CLB TIENG TRUNG -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+            <div class="cardi DarkBGround">
+              <div class="imgBx">
+                  <img src="chinese.png" alt="">
+              </div>
+              <div class="contente LightText">
+                  <div>
+                      <h3 style = "color: #ff7f00;">CLB Tiếng Trung</h3>
+                      <p>FCC là câu lạc bộ học thuật của trường Đại học FPT có khả năng trau dồi cũng như dạy thêm kiến thức về tiếng Trung cho các bạn sinh viên của FPT,tham gia clb tiếng Trung còn được học hỏi rất nhiều về kỹ năng truyền thông và được thoải mái thể hiện bản thân ở các lĩnh vực chuyên ngành khác nhau.
+                      </p>
+                      <a href="https://www.facebook.com/tiengtrungFPT/" class="btn">Read more</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!-- NO SHY -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="confidence.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">No Shy Club</h3>
+                    <p> Với mục đích mang đến cho các bạn sinh viên môi trường giao lưu, rèn luyện khả năng tiếng Anh, thực hành kỹ năng mềm. No Shy,là nơi mà tất cả các cá tính đều được chào đón, mỗi người đều có thể trở về với đúng bản sắc của mình mà không một chút ngại ngần.</p>
+                    <a href="https://www.facebook.com/noshyclub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- BOOK -->
+      <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="book.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Book Club</h3>
+                    <p>CLB dành cho những bạn trẻ không chỉ yêu thích sách, mà còn là văn hoá, tri thức, nghệ thuật sống nói chung.</p>
+                    <a href="https://www.facebook.com/fu.bukclub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- ENGLISH -->
+      <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="english.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">English Club</h3>
+                    <p>FEC mong muốn tạo ra một cộng đồng các bạn trẻ mang trong mình niềm đam mê với tiếng Anh, muốn biến tiếng Anh trở thành lợi thế cạnh tranh trong tương lai của bản thân hay chỉ đơn giản coi tiếng Anh giống như là một sở thích cá nhân.                      </p>
+                    <a href="https://www.facebook.com/englishclub.fu/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- DEBATE -->
+      <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="debate.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Debate Club</h3>
+                    <p>Nơi tạo ra môi trường để bạn sẵn sàng nói lên quan điểm và phản biện mà không bị phán xét. Đến với FDC, bạn sẽ tự trả lời được những câu hỏi mở đầu cùng với những thắc mắc bấy lâu nay về mọi vấn đề trong xã hội.</p>
+                    <a href="https://www.facebook.com/FUDebateClub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- PSYCHOLOGY -->
+      <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="psychology.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">CLB Tâm Lý Học</h3>
+                    <p>"CLB Tâm Lý" được thành lập với mong muốn tạo lên môi trường cho các bạn sinh viên có cơ hội được tìm hiểu, học tập, khám phá bản thân mình, giải mã những điều bí ẩn đằng sau những hành vi cảm xúc lời nói. </p>
+                    <a href="https://www.facebook.com/FPT.Psy/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      <!-- DANGO -->
+      <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="japan.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Dango Club</h3>
+                    <p>Câu lạc bộ Dango là một câu lạc bộ chuyên về văn hóa giải trí Nhật Bản. CLB là nơi giao lưu, thảo luận cho các bạn có chung đam mê với nền văn hóa hấp dẫn của xứ sở Phù Tang này. Nếu bạn có sở thích về manga, anime, cosplay... thì đại gia đình Dango là nơi dành cho bạn.</p>
+                    <a href="https://www.facebook.com/groups/dango.clb/F" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      <!-- MÂY MƯA -->
+      <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="rain.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">CLB Mây mưa</h3>
+                    <p>CLB Mây mưa  là 1 câu lạc bộ được thành lập với mục tiêu tạo 1 sân chơi,những ai yêu thích đất nước, con người và nền văn hóa Nhật Bản. Câu lạc bộ sinh hoạt hàng tuần theo các chủ đề về văn hóa Nhật Bản như: ẩm thực, nghệ thuật, phong tục truyền thống..... </p>
+                    <a href="https://www.facebook.com/maymuaclub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LẬP TRÌNH -->
+      <div class="row LightText" style="margin-bottom: 10%;">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 cont1 group LightText" style="padding-bottom: 0;padding-left: 0;padding-right: 0;">
+          <div class="mast__header from-left fade-in">
+            <h1 class="mast__title  " style="text-align:center;padding-bottom: 3%;">Các CLB Lập Trình</h1> 
+            <p class="mast__text " style="text-align: center;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur eaque exercitationem ullam quod?Minus beatae assumenda voluptas velit quis rerum inventore esse exercitationem doloremque aliquid impedit, labore               
+            </p>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>  
+        <!-- AI -->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="AI.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Artificial Intelligence</h3>
+                    <p>AI Club là CLB trí tuệ nhân tạo đầu tiên của FPTU với mục đích tạo ra môi trường học thuật, thúc đẩy nghiên cứu và ứng dụng trí tuệ nhân tạo vào thực tế.</p>
+                    <a href="https://www.facebook.com/aiclub.fptu/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- JSCLUB -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+            <div class="cardi DarkBGround">
+              <div class="imgBx">
+                  <img src="software.png" alt="">
+              </div>
+              <div class="contente LightText">
+                  <div>
+                      <h3 style = "color: #ff7f00;">Japanese Software Club</h3>
+                      <p>JS Club là câu lạc bộ Kỹ sư phần mềm Nhật Bản, nơi hội tụ của những bạn đam mê tiếng Nhật và lập trình.</p>
+                      <a href="https://www.facebook.com/fu.jsclub" class="btn">Read more</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!-- F-CODE -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+            <div class="cardi DarkBGround">
+              <div class="imgBx">
+                  <img src="code.png" alt="">
+              </div>
+              <div class="contente LightText">
+                  <div>
+                      <h3 style = "color: #ff7f00;">F-Code</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                      <a href="https://www.facebook.com/fcodefpt/" class="btn">Read more</a>
+                  </div>
+              </div>
+            </div>
+        </div> 
+        <!-- Ethical Hacker Club -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+            <div class="cardi DarkBGround">
+              <div class="imgBx">
+                  <img src="hacker.png" alt="">
+              </div>
+              <div class="contente LightText">
+                  <div>
+                      <h3 style = "color: #ff7f00;">Ethical Hacker Club</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                      <a href="https://www.facebook.com/fcodefpt/" class="btn">Read more</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div> 
+      <!-- ÂM NHẠC VÀ NGHỆ THUÂT -->
+      <div class="row LightText" style="margin-bottom: 10%;">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10  group cont1 LightText " style="padding-bottom: 0;padding-left: 0;padding-right: 0;">
+          <div class="mast__header from-right fade-in">
+            <h1 class="mast__title  " style="text-align:center;padding-bottom: 3%;">Các CLB Âm Nhạc và Nghệ Thuật</h1> 
+            <p class="mast__text " style="text-align: center;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.Aspernatur eaque exercitationem ullam quod?Minus beatae assumenda voluptas velit quis rerum inventore esse exercitationem doloremque aliquid impedit, labore               
+            </p>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>  
+        <!-- Soleilcrew-->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="bboy.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Soleil Crew FPTU</h3>
+                    <p>Soleil Crew là nhóm nhảy thuộc Đại học FPT Hà Nội, được thành lập vào năm 2016 bởi An Du – sinh viên K12 đồng thời là Miss FPTU 2018. Đến với Soleil là bạn đã đến với hội nhảy chơi đủ loại phong cách. Chính vì vậy nên SC luôn được các bạn trẻ săn đón vì sự nhiệt tình, trẻ trung và phá cách.</p>
+                    <a href="https://www.facebook.com/soleilcrewfptu/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Guitar -->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="guitar.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Guitar</h3>
+                    <p>Bạn là một người yêu ca nhạc ? Bạn có tinh thần học hỏi, đoàn kết, luôn sẵn sàng có mặt mỗi khi được giao việc ? .Và quan trọng hơn cả bạn luôn hòa đồng, nhiệt huyết? Vậy thì chào mừng bạn đến với Clb FGC, một nơi mà giai điệu của chiếc guitar đủ để làm bạn say đắm.                    </p>
+                    <a href="https://www.facebook.com/fuguitarclub/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- NHẠC CỤ DÂN TỘC -->
+        <div class="col-lg-6"  style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="biwa.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">CLB Nhạc cụ truyền thống</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/FTIC.FUHL" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Melody -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="music.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Melody</h3>
+                    <p>Ngoài việc là CLB Âm Nhạc của Đại Học FPT. Melody còn là một mái nhà đầy yêu thương, nơi mọi người chia sẻ nỗi buồn, niềm vui qua những câu hát với nhau. Nơi ngập tràn tiếng cười sau những ngày học hành vất vả.                        </p>
+                    <a href="https://www.facebook.com/FptuMelodyClub" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- HIPHOP -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="hiphop.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Fpt Hiphop Club</h3>
+                    <p>HFU là nơi mọi người thỏa mãn niềm đam mê nhảy với rất nhiều những thể loại khác nhau như Breaking, Popping, Hiphop Dance, Locking... Và quan trọng nhất: Hiphop không chỉ là những bước nhảy, Hiphop còn là một nền văn hóa, một phong cách sống của một cộng đồng</p>
+                    <a href="https://www.facebook.com/hiphopfptuniversity" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- PHOTOGRAPHY -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="camera.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">Photography Club</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/FUphotography.club" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- ĐIỆN ẢNH -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="clapperboard.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">CLB Điện Ảnh</h3>
+                    <p>Là nơi cho sinh viên yêu thích phim, thưởng thức phim và những người muốn học hỏi, sáng tạo và thử mình trong lĩnh vực điện ảnh một nhóm chịu trách nhiêm chính trong các khâu quay, dựng phim tài liệu về các sự kiện tiêu biểu của Đại Học FPT</p>
+                    <a href="https://www.facebook.com/fucinemastudio/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- HEBE -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="dance.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">HebeFPT</h3>
+                    <p>Tiền thân với tên gọi Văn Hóa Nghệ Thuật là CLB múa đầu tiên và duy nhất tại trường Đại học FPT. Đến với Hebe bạn sẽ được training về rất nhiều thể loại múa khác nhau, được có cơ hội được biểu diễn trên nhiều sân khấu lớn và được xây dựng đa dạng các kỹ năng ở các lĩnh vực khác nhau.</p>
+                    <a href="https://www.facebook.com/HebeFPT/" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- DESIGN -->
+        <div class="col-lg-6" style="display: flex;justify-content: center;">
+          <div class="cardi DarkBGround">
+            <div class="imgBx">
+                <img src="design.png" alt="">
+            </div>
+            <div class="contente LightText">
+                <div>
+                    <h3 style = "color: #ff7f00;">FU Designers</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus fugit numquam ipsam omnis, officia quam consequuntur voluptate esse libero eligendi ut culpa dolorem quisquam exercitationem delectus, repellat incidunt dolorum! Iure!</p>
+                    <a href="https://www.facebook.com/fudesigners" class="btn">Read more</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hitwebcounter Code START -->
+      <a href="https://www.hitwebcounter.com" target="_blank" style="position: absolute;z-index: 10000;bottom: 0;">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7814065&style=0036&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                                 
+    
+    </section>
+ 
+    
+    
+      <input type="text" style="border: transparent;background: transparent;color: transparent;" value="luandthe160124@fpt.edu.vn" id="myInput1">
+      <input type="text" style="border: transparent;background: transparent;color: transparent;" value="113" id="myInput2">
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+      <script src="https://unpkg.com/tippy.js@6"></script>
+      <script>
+        // TIPPY
+        tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+        // PROGRESSBAR
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.get.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset/totalHeight) *100;
+            progress.style.height = progressHeight + '%';
+        }
+        var main = document.getElementById("body")
+        var button = document.getElementById("Switch");
+        var text = document.getElementsByClassName("nav-link")
+        var row = document.getElementById("row")
+        var list = document.getElementsByClassName("list-item");
+        var x = 0;
+        var i;
+        var str = document.getElementById("Switch").innerHTML;
+        var res = str.replace("🌝", "🌚")
+        var rep = str.replace("🌚","🌝");
+        var cardi = document.getElementsByClassName("cardi");
+        var contente = document.getElementsByClassName("contente");
+        var group = document.getElementsByClassName("group")
+        function Switch()
+
+        {
+            x++;
+            if(x%2==1)
+            {
+                main.classList.remove("DarkBGround");
+                main.classList.add("LightBGround");
+                button.classList.add("DarkBGround");
+                button.classList.remove("LightBGround")
+                document.getElementById("Switch").innerHTML = res;
+                for(i=0;i<group.length;i++)
+                {
+                  group[i].classList.remove("LightText");
+                  group[i].classList.add("LightText");
+                }
+                for(i = 0;i<text.length;i++)
+                {
+                  if(i!=1)
+                  {
+                    text[i].classList.remove("LightText")
+                    text[i].classList.add("LightText")
+                  }
+                }
+                for(i=0;i<list.length;i++)
+                {
+                  list[i].classList.remove("LightText");
+                  list[i].classList.add("LightText");
+                }
+                for(i=0;i<cardi.length;i++)
+                {
+                  cardi[i].classList.remove("DarkBGround");
+                  cardi[i].classList.add("LightBGround");
+                }
+                for(i=0;i<contente.length;i++)
+                {
+                  contente[i].classList.remove("LightText");
+                  contente[i].classList.add("LightText");
+                }
+              }
+            else 
+            {
+                main.classList.add("DarkBGround");
+                main.classList.remove("LightBGround");
+                button.classList.remove("DarkBGround");
+                button.classList.add("LightBGround");
+                document.getElementById("Switch").innerHTML = rep;
+                for(i=0;i<group.length;i++)
+                {
+                  group[i].classList.add("LightText");
+                  group[i].classList.remove("LightText");
+                }
+                for(i=0;i<text.length;i++)
+                {
+                  if(i!=1)
+                  {
+                    text[i].classList.add("LightText")
+                    text[i].classList.remove("LightText")
+                  }
+                }
+                for(i=0;i<list.length;i++)
+                {
+                  list[i].classList.add("LightText");
+                  list[i].classList.remove("LightText");
+                }
+                for(i=0;i<cardi.length;i++)
+                {
+                  cardi[i].classList.remove("LightBGround");
+                  cardi[i].classList.add("DarkBGround");
+                }
+                for(i=0;i<contente.length;i++)
+                {
+                  contente[i].classList.add("LightText");
+                  contente[i].classList.remove("LightText");
+                }
+              }
+            console.log(x);
+        }
+        console.log(cardi.length);
+     </script>
+      <script src="GlowingText.js"></script>
+</body>
+</html>

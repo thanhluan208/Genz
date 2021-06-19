@@ -1,0 +1,62 @@
+body
+{
+    background: linear-gradient(
+-45deg
+,rgba(255, 136, 0, 0.87),rgba(253, 115, 23, 0.76),rgb(255, 135, 66),rgb(201, 64, 0));
+    padding: 0;
+    margin: 0;
+    background-size: 400% 400%;
+}
+
+.text {
+    font-size: 70px;
+    padding-bottom: 5%;
+    color: #fafafa;
+    text-align: center;
+  }
+  .dud {
+    color: #ff5100;
+  }
+
+
+
+ 
+
+.div
+{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+
+}
+.div span
+{
+    display: flex;
+    width: 170px;
+    height: 200px;
+    background: transparent;
+    color: #000;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div span:nth-child(2)
+{
+    height: 50px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow:5px 5px 30px rgba(0,0,0,0.1);
+}
+.div:last-child span:nth-child(2)
+{
+    background: #eb0707;
+}
