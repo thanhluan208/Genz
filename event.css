@@ -6,6 +6,10 @@
   height: 70vh;
   background: transparent;
 }
+a:hover 
+{
+  text-decoration: none;
+}
 .swiper-container-3d .swiper-slide-shadow-right,.swiper-slide-shadow-left
 {
   background-image: none !important;
