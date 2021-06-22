@@ -1,0 +1,234 @@
+
+
+.swiper-slide
+{
+  width: 60vw;
+  height: 70vh;
+  background: transparent;
+}
+.swiper-container-3d .swiper-slide-shadow-right,.swiper-slide-shadow-left
+{
+  background-image: none !important;
+}
+#sec1
+{
+  background: none !important;
+  box-shadow: none !important;
+  overflow: hidden;
+  margin-top: 10%;
+  margin-left: 0;
+  margin-right: 0;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, #ff9068, #fd746c); 
+    color: #fff;
+    font-weight: 500;
+    background-size: 400% 400%;
+    overflow-x: hidden;
+}
+    nav {
+  
+        z-index: 1000;
+        width: 80%;
+        left: 10%;
+        top: 6%;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+        
+        border-radius: 20px;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+      }
+      
+      nav ul {
+        text-align: center;
+      }
+      
+      nav ul li {
+        display: inline-block;
+      }
+      
+      nav ul li a {
+        padding: 18px;
+        font-family: "Open Sans";
+        text-transform:uppercase;
+        color: rgba(222, 223, 228, 0.747);
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .disable
+      {
+        display: none;
+      }
+      
+      #IconContainer
+      {
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        z-index: 1000;
+        flex-direction:unset;
+        margin-bottom: 2%;
+      }
+      #IconContainer #icon
+      {
+        position: relative;
+        list-style: none ;
+        margin-left: 10%;
+        background-color: transparent;
+        display: unset;
+        padding: 0;
+      }
+      #IconContainer #icon #link 
+      {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2em;
+        box-shadow: 0px 15px 35px rgba(255, 102, 0, 0.2);
+        border: 1px solid rgba(255, 102, 0, 0.925); 
+        backdrop-filter: blur(2px);
+        transition: 0.5s;
+        overflow: hidden;
+      }
+      #IconContainer #icon #link:hover
+      {
+        transform: translateY(-20px);
+      }
+      #IconContainer #icon #link::before
+      {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 102, 0, 0.925);
+        transform: skewX(45deg) translateX(150px);
+        transition: 0.5s;
+      }
+      #IconContainer #icon #link:hover::before
+      {
+        transform: skewX(45deg) translateX(-150px);
+      }
+
+
+/* .img-str
+{
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  right: -1%;
+} */
+.img-str
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70%;
+}
+.img-str img
+{
+  box-shadow: 0 15px 35px rgb(0 0 0 / 50%);
+  margin-top: -7%;
+  margin-left: -5%;
+}
+.title
+{
+  position: relative;
+  padding-left: 5%;
+  padding-top: 3%;
+  /* top: 70%; */
+}
+.title h1
+{
+  font-size: 180%;
+  color: #000;
+}
+.title p
+{
+  font-size: 100%;
+  color: #000;
+}
+@media only screen and (max-width:1200px) {
+  .swiper-container
+  {
+    margin-top: 10% !important;
+  }
+  .title h1
+{
+  font-size: 110%;
+  color: #000;
+}
+.title p 
+{
+  font-size: 70%;
+}
+
+}
+@media only screen and (max-width:900px) {
+  .swiper-slide
+  {
+    width: 80vw;
+    height: 50vh;
+  }
+  .title h1
+  {
+    font-size: 90%;
+    color: #000;
+  }
+  
+}
+@media only screen and (max-width:770px) {
+  .swiper-slide
+  {
+    width: 80vw;
+    height: 40vh;
+  }
+  .swiper-container
+  {
+    margin-top: 20% !important;
+  }
+  .title h1
+  {
+    font-size: 200%;
+    color: #000;
+  }
+  .title p
+  {
+    font-size: 100%;
+    color: #000;
+  }
+}
+@media only screen and (max-width:400px) {
+  .swiper-slide
+  {
+    width: 80vw;
+    height: 30vh;
+  }
+  .swiper-container
+  {
+    margin-top: 35% !important;
+  }
+  .title h1
+  {
+    font-size: 130%;
+    color: #000;
+  }
+  .title p
+  {
+    font-size: 80%;
+    color: #000;
+  }
+}

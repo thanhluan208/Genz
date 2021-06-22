@@ -13,6 +13,7 @@
   .mast__title span {
     -webkit-animation: letter-glow 0.7s 0s ease both;
             animation: letter-glow 0.7s 0s ease both;
+            animation-delay: 1s;
   }
   .mast__title span:nth-child(1) {
     -webkit-animation-delay: 0.05s;
