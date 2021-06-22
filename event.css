@@ -6,6 +6,7 @@
   height: 70vh;
   background: transparent;
 }
+
 a:hover 
 {
   text-decoration: none;
@@ -22,6 +23,8 @@ a:hover
   margin-top: 10%;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 5%;
 }
 body
 {
@@ -192,6 +195,13 @@ body
     font-size: 90%;
     color: #000;
   }
+  nav
+  {
+    position: unset !important;
+    width: 100% !important;
+    left: 0% !important;
+    top: 2% !important;
+  }
   
 }
 @media only screen and (max-width:770px) {
@@ -234,5 +244,9 @@ body
   {
     font-size: 80%;
     color: #000;
+  }
+  .col-md-4
+  {
+    margin-top: 5% !important;
   }
 }

@@ -97,8 +97,10 @@
   };
   
   next();
-  var copyText1 = document.getElementById("myInput1");
+  
   function myFunction1() {
+    var copyText1 = document.getElementById("myInput1");
+    console.log(copyText1)
     copyText1.select();
     copyText1.setSelectionRange(0, 99999)
     document.execCommand("copy");
@@ -109,6 +111,7 @@
   
   function myFunction2() {
     var copyText2 = document.getElementById("myInput2");
+    console.log(copyText2)
     copyText2.select();
     copyText2.setSelectionRange(0, 99999)
     document.execCommand("copy");
