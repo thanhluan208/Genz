@@ -16,6 +16,42 @@ a:hover
 {
   display: none !important;
 }
+.quote-str 
+{
+  width: 90%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 15px 35px rgb(0 0 0 / 40%);
+  margin-left: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
+  border-radius: 15px;
+  font-size: 13px;
+}
+.quote 
+{
+  padding-bottom: 2%;
+}
+.quote-str .avatar 
+{
+  position: absolute;
+  right: 9%;
+  bottom: 6%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 15px 35px rgb(0 0 0 / 10%);
+  border: solid 3px rgba(240, 76, 0, 0.959);
+}
+.sign 
+{
+  width: 100%;
+
+}
+.sign i 
+{
+  font-size: 30px;
+  color: #ff6600;
+}
 @media only screen and (min-width:2000px)
 {
     .contact a
@@ -412,10 +448,12 @@ a:hover
         margin-left: 0;
         margin-right: 0;
         height: unset;
+        padding: 0%;
     }
     .para
     {
         text-align: left;
+        padding-left: 2% !important;
     }
     
 }

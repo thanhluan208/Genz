@@ -91,7 +91,7 @@
   let count = 0;
   const next = () => {
     fx.setText(phrases[count]).then(() => {
-      setTimeout(next, 2500);
+      setTimeout(next, 5000);
     });
     count = (count + 1) % phrases.length;
   };
