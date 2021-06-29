@@ -31,7 +31,7 @@
     this.currentDate = new Date();
     this.init();
   }
-
+  
   // Avoid Plugin.prototype conflicts
   $.extend(Plugin.prototype, {
     init: function () {

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="test_media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
-
+    <script src="calendar.js"></script>
 </head>
 <style>
 </style>
@@ -73,7 +73,7 @@
       </div>
     <div class="row main" style="margin-left: 5%;width: 95%;padding-bottom: 2%;">
         <div class="col-lg-3" style="display: block;justify-content: center;align-items: center;height: 100vh;margin-top: 0;">
-            <h1 class="head" style="font-size: 24px;margin-top: 10%;"><span> 🗓</span> Event calendar</h1>  
+            <h1 class="head" style="font-size: 24px;margin-top: 10%;" onclick="myFunction()"><span> 🗓</span> Event calendar</h1>  
             <div class="container cont1" style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top:5%;margin-bottom:8%;text-align: center;width: 100%;overflow: hidden;padding: 0;border-radius: 10px;">
                 <div id="container" class="calendar-container"></div>                
             </div>
@@ -819,26 +819,7 @@
     let container = $("#container").simpleCalendar({
       fixedStartDay: 0, // begin weeks by sunday
       disableEmptyDetails: true,
-      events: [
-        // generate new event after tomorrow for one hour
-        {
-          startDate: new Date(new Date().setHours(new Date().getHours() + 48)).toISOString(),
-          endDate: new Date(new Date().setHours(new Date().getHours() + 72)).getTime(),
-          summary: 'HACKATHON'
-        },
-        // generate new event for yesterday at noon
-        {
-          startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
-          endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
-          summary: 'Super Big Open'
-        },
-        // generate new event for the last two days
-        {
-          startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
-          endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
-          summary: 'abc'
-        }
-      ],
+      
 
     });
     new Date
@@ -1077,9 +1058,31 @@
             appearOnScroll.observe(slider)
         })
      </script>
+     
      <script src="js/music-list.js"></script>
      <script src="js/script.js"></script>
-     <script src="calendar.js"></script>
-      
+    
+     <script>
+        $(document).ready(function(){
+            if($(".month").text() == "june 2021")
+            {
+              var day = $(".day")[11]
+              day.classList.add("has-event")
+              day.classList.remove("disabled")
+              var $event = $('' +
+              '<div class="event">' +
+              ' <div class="event-hour">' + "8h00" + '</div>' +
+              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
+              ' <div class="event-summary">' + "The international day" + '</div>' +
+              '</div>');
+              
+              $(".has-event").click(function(){
+                $(".event-wrapper").append($event)
+              });
+            }
+
+        });
+       
+     </script>
 </body>
 </html>
