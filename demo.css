@@ -80,7 +80,7 @@ body {
       height: 2.5em;
       line-height: 2.5em;
       border-radius: 50%;
-      border: 2px solid transparent;
+      
       cursor: pointer; }
       .calendar .day:hover {
         border: 2px solid #6691CC; }
@@ -89,8 +89,12 @@ body {
         background-repeat: no-repeat;
         background-size: cover           ;
         color: white; }
+        .has-event 
+        {
+          border: 2px solid #6691CC ;
+        }
         .calendar .day.today.has-event:after {
-          background: white; }
+          background: white;}
       .calendar .day.wrong-month {
         color: #CBD1D2; }
       .calendar .day.wrong-month:hover {
