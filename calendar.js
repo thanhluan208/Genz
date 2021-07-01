@@ -104,7 +104,6 @@
       //For firstDay to lastDay
       for (var day = firstDay; day <= lastDay; day.setDate(day.getDate())) {
         var tr = $('<tr></tr>');
-        console.log(day.toDateString())
         //For each row
         for (var i = 0; i < 7; i++) {
           var td = $('<td><div class="day" data-date="' + day.toISOString() + '">' + day.getDate() + '</div></td>');
@@ -114,7 +113,6 @@
           //if today is this day
           if (day.toDateString() == (new Date).toDateString()) {
             $day.addClass("today");
-            $day.addClass("has-event")
           }
 
           //if day is not in this month
@@ -165,12 +163,115 @@
       $(plugin.element).on('click', '.btn-prev', function ( e ) {
         plugin.changeMonth(-1)
         e.preventDefault();
+        console.log($(".month").text())
+        if($(".month").text() == "august 2021")
+            {
+              var i;
+              console.log("workd")
+              for(i = 0 ;i< $(".day").length;i++)
+              {
+                console.log("worded")
+                if($(".day")[i].textContent == "14")
+                {
+                  console.log('worked')
+                  $(".day")[i].classList.add("has-event")
+                  $(".day")[i].classList.remove("disabled")
+                }
+              }
+              var $event = $('' +
+              '<div class="event">' +
+              ' <div class="event-hour">' + "8h00" + '</div>' +
+              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
+              ' <div class="event-summary">' + "The international day" + '</div>' +
+              '</div>');
+              
+              $(".has-event").click(function(){
+                $(".event-wrapper").append($event)
+              });
+            }
+        if($(".month").text() == "july 2021")
+        {
+          var i;
+          console.log("workd")
+          for(i = 0 ;i< $(".day").length;i++)
+          {
+            console.log("worded")
+            if($(".day")[i].textContent == "10")
+            {
+              console.log('worked')
+              $(".day")[i].classList.add("has-event")
+              $(".day")[i].classList.remove("disabled")
+            }
+          }
+          var $event = $('' +
+          '<div class="event">' +
+          ' <div class="event-hour">' + "8h00" + '</div>' +
+          ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
+          ' <div class="event-summary">' + "The international day" + '</div>' +
+          '</div>');
+          
+          $(".has-event").click(function(){
+            $(".event-wrapper").append($event)
+          });
+        }
       });
 
       //Click next month
       $(plugin.element).on('click', '.btn-next', function ( e ) {
         plugin.changeMonth(1);
         e.preventDefault();
+        console.log($(".month").text())
+        if($(".month").text() == "august 2021")
+            {
+              var i;
+              console.log("workd")
+              for(i = 0 ;i< $(".day").length;i++)
+              {
+                console.log("worded")
+                if($(".day")[i].textContent == "14")
+                {
+                  console.log('worked')
+                  $(".day")[i].classList.add("has-event")
+                  $(".day")[i].classList.remove("disabled")
+                }
+              }
+              var $event = $('' +
+              '<div class="event">' +
+              ' <div class="event-hour">' + "8h00" + '</div>' +
+              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
+              ' <div class="event-summary">' + "The international day" + '</div>' +
+              '</div>');
+              
+              $(".has-event").click(function(){
+                $(".event-wrapper").append($event)
+              });
+            }
+        if($(".month").text() == "july 2021")
+            {
+              var i;
+              console.log("workd")
+              for(i = 0 ;i< $(".day").length;i++)
+              {
+                console.log("worded")
+                if($(".day")[i].textContent == "10")
+                {
+                  console.log('worked')
+                  $(".day")[i].classList.add("has-event")
+                  $(".day")[i].classList.remove("disabled")
+                }
+              }
+              var $event = $('' +
+              '<div class="event">' +
+              ' <div class="event-hour">' + "8h00" + '</div>' +
+              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
+              ' <div class="event-summary">' + "The international day" + '</div>' +
+              '</div>');
+              
+              $(".has-event").click(function(){
+                $(".event-wrapper").append($event)
+              });
+            }
+          
       });
 
       //Binding day event

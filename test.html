@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-md-2 text-center">
                   <li class="nav-item">
-                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="cube.html">Article</a>
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Article</a>
                   </li>
                 </div>
                 <div class="col-md-2 text-center">
@@ -1062,27 +1062,6 @@
      <script src="js/music-list.js"></script>
      <script src="js/script.js"></script>
     
-     <script>
-        $(document).ready(function(){
-            if($(".month").text() == "june 2021")
-            {
-              var day = $(".day")[11]
-              day.classList.add("has-event")
-              day.classList.remove("disabled")
-              var $event = $('' +
-              '<div class="event">' +
-              ' <div class="event-hour">' + "8h00" + '</div>' +
-              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
-              ' <div class="event-summary">' + "The international day" + '</div>' +
-              '</div>');
-              
-              $(".has-event").click(function(){
-                $(".event-wrapper").append($event)
-              });
-            }
-
-        });
-       
-     </script>
+    
 </body>
 </html>
