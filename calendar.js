@@ -196,7 +196,7 @@
           for(i = 0 ;i< $(".day").length;i++)
           {
             console.log("worded")
-            if($(".day")[i].textContent == "10")
+            if($(".day")[i].textContent == "7")
             {
               console.log('worked')
               $(".day")[i].classList.add("has-event")
@@ -206,8 +206,8 @@
           var $event = $('' +
           '<div class="event">' +
           ' <div class="event-hour">' + "8h00" + '</div>' +
-          ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
-          ' <div class="event-summary">' + "The international day" + '</div>' +
+          ' <div class="event-date">' +"Wednesday,June 7, 2021"+ '</div>' +
+          ' <div class="event-summary">' + "Kì thi trung học phổ thông quốc gia" + '</div>' +
           '</div>');
           
           $(".has-event").click(function(){
@@ -247,30 +247,30 @@
               });
             }
         if($(".month").text() == "july 2021")
+        {
+          var i;
+          console.log("workd")
+          for(i = 0 ;i< $(".day").length;i++)
+          {
+            console.log("worded")
+            if($(".day")[i].textContent == "7")
             {
-              var i;
-              console.log("workd")
-              for(i = 0 ;i< $(".day").length;i++)
-              {
-                console.log("worded")
-                if($(".day")[i].textContent == "10")
-                {
-                  console.log('worked')
-                  $(".day")[i].classList.add("has-event")
-                  $(".day")[i].classList.remove("disabled")
-                }
-              }
-              var $event = $('' +
-              '<div class="event">' +
-              ' <div class="event-hour">' + "8h00" + '</div>' +
-              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
-              ' <div class="event-summary">' + "The international day" + '</div>' +
-              '</div>');
-              
-              $(".has-event").click(function(){
-                $(".event-wrapper").append($event)
-              });
+              console.log('worked')
+              $(".day")[i].classList.add("has-event")
+              $(".day")[i].classList.remove("disabled")
             }
+          }
+          var $event = $('' +
+          '<div class="event">' +
+          ' <div class="event-hour">' + "8h00" + '</div>' +
+          ' <div class="event-date">' +"Wednesday,June 7, 2021"+ '</div>' +
+          ' <div class="event-summary">' + "Kì thi trung học phổ thông quốc gia" + '</div>' +
+          '</div>');
+          
+          $(".has-event").click(function(){
+            $(".event-wrapper").append($event)
+          });
+        }
           
       });
 
