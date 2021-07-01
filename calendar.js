@@ -171,7 +171,7 @@
               for(i = 0 ;i< $(".day").length;i++)
               {
                 console.log("worded")
-                if($(".day")[i].textContent == "14")
+                if($(".day")[i].textContent == "20")
                 {
                   console.log('worked')
                   $(".day")[i].classList.add("has-event")
@@ -181,8 +181,8 @@
               var $event = $('' +
               '<div class="event">' +
               ' <div class="event-hour">' + "8h00" + '</div>' +
-              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
-              ' <div class="event-summary">' + "The international day" + '</div>' +
+              ' <div class="event-date">' +"Friday, August 20, 2021"+ '</div>' +
+              ' <div class="event-summary">' + "Happy Birthday to me" + '</div>' +
               '</div>');
               
               $(".has-event").click(function(){
@@ -228,7 +228,7 @@
               for(i = 0 ;i< $(".day").length;i++)
               {
                 console.log("worded")
-                if($(".day")[i].textContent == "14")
+                if($(".day")[i].textContent == "20")
                 {
                   console.log('worked')
                   $(".day")[i].classList.add("has-event")
@@ -238,8 +238,8 @@
               var $event = $('' +
               '<div class="event">' +
               ' <div class="event-hour">' + "8h00" + '</div>' +
-              ' <div class="event-date">' +"Monday,June 14, 2021"+ '</div>' +
-              ' <div class="event-summary">' + "The international day" + '</div>' +
+              ' <div class="event-date">' +"Friday, August 20, 2021"+ '</div>' +
+              ' <div class="event-summary">' + "Happy Birthday to me" + '</div>' +
               '</div>');
               
               $(".has-event").click(function(){
