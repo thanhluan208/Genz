@@ -5,410 +5,1106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Information Assurance</title>
+    <title>4GenZ</title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
- 
+    <link rel="stylesheet" href="session1.css">
+    <link rel="stylesheet" href="media_catalog.css">
+    <link rel="stylesheet" href="GlowingText.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="test_media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
-    <link rel="stylesheet" href="vovinam.css">
 
 </head>
 <style>
-    .content::before
-    {
-        content: none;
-        background: none;
-    }
-    thead tr th:nth-child(1)
-    {
-        width: 15%;
-    }
-    thead tr th:nth-child(2)
-    {
-        width: 25%;
-    }
 </style>
-<body   >
-      
-    <img id="img" src="Fluid.png" class="img-fluid" style="position: fixed;height: 100%;width: 100%;top: 0;" alt="">
-    <div class="row main" style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin:5%;margin-left: 2%;border-radius: 20px;width: 95%;margin-top: 2%;height: 90vh;">
-        <div class="col-lg-1 column1" style="padding-left:0;padding-right: 0;border-top-left-radius: 20px;border-bottom-left-radius: 20px;background: rgba(255,255,255,0.8);backdrop-filter: blur(4px);height: 100%;" >
-            <div class="container logo">
-                <img src="favicon.png" class="img-fluid" alt="">
-                
+<body id="body"  >
+      <!-- <img src="Fluid.png" class="img-fluid" alt=""> -->
+    <div id="scrollPath"  style="position: absolute;z-index: 10000;" ></div>
+    <div id="progressbar" style="z-index: 1000;position: absolute;"></div>
+    <div class="container-fluid-md heading " id="navbar" style="padding-left:2%;padding-right:2%;transition: opacity 250ms ease-in">
+        <nav class="navbar navbar-expand-md navbar-dark" id="nav" style="backdrop-filter: blur(100px);-webkit-backdrop-filter: blur( 40px );">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: 1px solid rgba(255, 102, 0, 0.925);z-index: 1000;">
+            <span class="navbar-toggler-icon" style = "color: rgba(255, 102, 0, 0.925);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="width: 100%;">
+              <div class="row">
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText "  style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="index.html">Home</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center"> 
+                  <li class="nav-item">
+                    <a class="nav-link LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="university.html">University</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText "  style="color: rgba(255, 102, 0, 0.925) !important;font-weight: bolder;" href="test.html">Clubs</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">    
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Events</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Article</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="About.html">About us</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>  
+        </nav>   
+      </div>
+    <img src="Fluid.png" class="img-fluid" style="position: fixed;height: 100%;width: 100%;top: 0;" alt="">
+    <div class="row main" style="margin-left: 5%;width: 95%;padding-bottom: 2%;">
+        <div class="col-lg-3" style="display: block;justify-content: center;align-items: center;height: 100vh;margin-top: 0;">
+            <h1 class="head" style="font-size: 24px;margin-top: 10%;"><span> 🗓</span> Event calendar</h1>  
+            <div class="container cont1" style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top:5%;margin-bottom:8%;text-align: center;width: 100%;overflow: hidden;padding: 0;border-radius: 10px;">
+                <div id="container" class="calendar-container"></div>                
             </div>
-            <div class="navi_str" style="display: inline-grid;margin-top: 70%;width: 100%;">
-                <a class="navi" href="index.html"><i class="fas fa-home"></i></a>
-                <a class="navi" href="test.html"><i class="fas fa-university"></i></a>
-                <a  class="navi" href=""><i class="far fa-calendar-check"></i></a>
-                <a class="navi" href=""><i class="far fa-newspaper"></i></a>
-                <a class="navi" href="About.html"><i class="fas fa-users"></i></a>
+            <div class="container tag_name disable" style="display: flex;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );width: 80%;height: 150px;position: absolute;left: -20%;margin-top: 2%;background: linear-gradient(#FDC830,#F37335);border-radius: 10px;" >
+              <a href="#"  class="para0" style="font-weight: bold;color: #fff;font-size: 40px;">The S-team</a>
             </div>
-            
-            <div class="quit"><a href="university.html"><i class="fas fa-power-off"></i></a></div>
+            <div class="container" style="display: block;justify-content: left;align-items: center;position: absolute;bottom: 1%;padding-left: 0;transition: all .6s cubic-bezier(0.5, 0.5, 0.5, 0.5);">
+              <h1 class="head Contact" style="font-size: 24px;margin-top: 30%;"> Contact</h1> 
+              <div style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) ;backdrop-filter: blur( 4px );margin-top: 5%;border-radius: 20px;">
+                <a href="https://www.google.com/?gws_rd=ssl" class="contacte long" style="font-size: 18px;color: #fff;padding-left: 2%;"> <span style="color: #F37335;font-weight: bold;">Gmail:</span> luandthe160124@fpt.edu.vn</a>
+              </div>
+              <div  style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6) ;backdrop-filter: blur( 4px );margin-top: 5%;border-radius: 20px;">
+                <a href="https://www.google.com/?gws_rd=ssl" class="contacte short" style="font-size: 18px;color: #fff;padding-left: 2%;"> <span style="color: #F37335;font-weight: bold;">Facebook:</span> Dang Thanh Luan</a>
+              </div>
+              <div  style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 5%;border-radius: 20px;">
+                <a href="https://www.google.com/?gws_rd=ssl" class="contacte short"style="font-size: 18px;color: #fff;padding-left: 2%;"> <span style="color: #F37335;font-weight: bold;">Phone:</span> 0123456789</a>
+              </div>
+            </div>
         </div>
-        <div  class="col-lg-8 content" >
-          <h1 class="heading">
-            IA - Information Assurance
-        </h1>
-          <div  style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;">
-            <img src="IA.jpg" style="width: 90%; height: 50%;border-radius: 10px;" alt="">
+        <div class="col-lg-6 card_box">
+          <div class="input-group" style="margin-top: 5%;">
+            <input type="search" placeholder="What club are you searching for?" aria-describedby="button-addon1" class="form-control " style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );border: 1px solid transparent;">
+            <div class="input-group-append">
+              <button id="button-addon1" type="submit" onclick="getValue()" class="btn btn-link text-primary" style="overflow: hidden;margin: 0;background: linear-gradient(#FDC830,#F37335);"><i class="fa fa-search" style="color:#fff;"></i></button>
+            </div>
           </div>
-            
-            <p class="para"><span style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">An toàn thông tin</span> – Ngành không bao giờ hết “HOT” tại Việt Nam và trên thế giới. Việc đảm bảo an ninh thông tin toàn diện từ cá nhân, doanh nghiệp, cho tới tổ chức và chính phủ là hết sức cần thiết. Sự bùng nổ của công nghệ, điện toán đám mây, thương mại điện tử, tài chính online.. thường xuyên đối mặt với các nguy cơ “mất an toàn thông tin”. Đúng vậy, đây rõ ràng là cơ hội và thách thức dành cho bạn nếu lựa chọn ngành An toàn thông tin.
-            </p>
-            <p class="para"><span style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Kiến thúc chuyên sâu</span> <br>
-                – Có kiến thức nền tảng về máy tính (phần cứng, phần mềm) và hệ thống mạng <br>
-
-                – Hiểu và nắm bắt về luật  an toàn thông tin <br>
-
-                – Học và thực hành tốt về An Ninh Mạng <br>
-
-                – Vận dụng tốt ngôn ngữ lập trình (như PHP, Java, C#..) <br>
-
-                – Hiểu và vận hành quy trình phát triển phần mềm <br>
-
-                – Có kỹ năng điều tra tội phạm mạng, tội phạm an toàn thông tin <br>
-
-                – Phân tích lỗ hổng, virus, mã độc, phân tích đánh giá hệ thống <br>
-
-                – Có chuyên môn về mã hóa thông tin, an toàn cơ sở dữ liệu <br>
-
-                – Có kỹ năng xử lý sự cố xâm nhập hệ thống như Dos, mã độc tống tiền, phishing… <br>
-
-                – Kiểm thử và đánh giá an ninh thông tin cho hệ thống (server, mạng lan, nội bộ, website…) 
-            </p>
-            <p class="para"><span style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">An toàn thông tin bao gồm các nhóm</span> <br>
-                – An toàn vận hành (operations security)  <br>
-
-                – Phát triển công cụ (applied security) <br>
-
-                – An toàn sản phẩm (product security) <br>
-
-                – Tìm diệt mã độc và các nguy cơ khác (threat analysis)</p>
-            <p class="para"><span style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Tại sao nên chọn học An Toàn Thông Tin ? </span> <br>
-                Ngoài việc hỗ trợ phát triển kinh tế, sự bùng nổ Công nghệ thông tin tại Việt Nam trong những năm gần đây cũng chính là cơ hội cho các “tin tặc” lợi dụng để trục lợi cá nhân ảnh hưởng trực tiếp đến các doanh nghiệp, tổ chức. Do vậy, vai trò của của ngành An toàn thông tin trong xã hội hiện đại ngày càng ngày càng trở nên quan trọng, đặc biệt trong công tác bảo mật hệ thống dữ liệu, nguồn tài nguyên,...tránh bị xâm phạm, hack...</p>
-            <p class="para">
-                <span style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">Mức lương của một kĩ sư an toàn thông tin</span> <br>
-                Hiện nay, các kỹ sư ATTT có thu nhập khá cao so với mặt bằng chung của các Kỹ sư thuộc khối Công nghệ thông tin và các ngành khác. Các chuyên viên mới ra trường thường có mức lương khởi điểm trung bình khoảng 300 usd – 400 usd (tương đương với 6,5 triệu – 10 triệu/ tháng).
-            </p>
-            <h1 class="heading">Lộ Trình Đào Tạo</h1>
-            <table class="table table-striped table-bordered" style="margin-top:5%">
-                <thead style="background: #ff8800;color: #fff;font-weight: 500;">
-                  <tr style="text-align: center;">
-                    <th>Học Kỳ</th>
-                    <th>Học Phần</th>
-                    <th>Kỹ Năng Đạt Được</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td style="font-weight: 500;">NỀN TẢNG</td>
-                    <td>
-                        <li>Tuần lễ định hướng</li>
-                        <li>Tháng rèn luyện tập trung</li>
-                        <li>Tiếng Anh nền tảng từ Top Notch 1 đến Summit 1</li>
-                        <li>Học kỳ tiếng Anh Summit 2 tại nước ngoài</li>
-                        <li>Võ Vovinam</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên có phương pháp học đại học hiệu quả như: tự học, làm việc nhóm, quản lý thời gian, tối ưu hoá năng lực não bộ cải thiện kết quả học tập.</li>
-                        <li>Sinh viên đạt trình độ tiếng Anh tương đương IELTS 6.0 hoặc TOEFL iBT 80.</li>
-                        <li>Sinh viên tự tin đọc hiểu giáo trình, học tập hoàn toàn bằng tiếng Anh, giao tiếp thông thạo với giảng viên và sinh viên quốc tế.</li>
-                        <li>Sinh viên có tinh thần rèn luyện thể chất, phát triển cá nhân toàn diện.</li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 1</td>
-                    <td>
-                        <li>Nhập môn khoa học máy tính</li>
-                         <li>Tổ chức và Kiến trúc máy tính</li>
-                        <li>Cơ sở lập trình (với C) </li>
-                         <li>Toán cho ngành kỹ thuật</li>
-                         <li>Kỹ năng học tập đại học </li>
-                         <li>Vovinam 2 </li>
-                    </td>
-                    <td>
-                        <li>Sinh viên có bức tranh tổng thể về CNTT thông qua các khái niệm cơ bản: lịch sử phát triển, công cụ, kiến trúc phần cứng, phần mềm, hệ điều hành, mạng và Internet, cấu trúc dữ liệu...</li>
-                        <li>Sinh viên tìm hiểu về kiến trúc và tổ chức máy tính: bao gồm các chủ đề về thiết kế vật lý của máy tính (tổ chức) và thiết kế lôgic của máy tính (kiến trúc). </li>
-                        <li>Sinh viên được học về các ngôn ngữ lập trình, ngôn ngữ C; quá trình phát triển phần mềm; lập trình căn bản dùng C. </li>
-                        <li>Sinh viên được tăng cường các kiến thức cơ bản của giải tích và đại số tuyến tính và các ứng dụng của chúng trong khoa học, kỹ thuật. </li>
-                        <li>Sinh viên được trang bị phương pháp học đại học hiệu quả.                        </li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 2</td>
-                    <td>
-                        <li>Hệ điều hành</li>
-                         <li>Mạng máy tính</li>
-                        <li>Lập trình hướng đối tượng</li>
-                         <li>Toán rời rạc</li>
-                        <li>Kỹ năng giao tiếp và cộng tác</li>
-                         <li>Vovinam 3</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên được giới thiệu về hệ điều hành,  nắm được các kiến thức về hệ thống mạng máy tính, kiến trúc mạng, các mô hình tham chiếu, các giao thức, họ giao thức TCP/IP, một số kiến thức cơ bản về an ninh mạng. </li>
-                        <li>Sinh viên có kiến thức nền tảng toán học cho khoa học máy tính. </li>
-                        <li>Sinh viên được trang bị kỹ năng làm việc nhóm, bao gồm cả cách làm việc, triển khai, trao đổi các chiến lược và giao tiếp trong nhóm hiệu quả.  </li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 3</td>
-                    <td>
-                        <li>Các hệ cơ sở dữ liệu</li>
-                         <li> Nhập môn An toàn thông tin</li>
-                        <li>Cấu trúc dữ liệu và giải thuật</li>
-                         <li>Thực hành OOP với Java</li>
-                         <li>Ngoại ngữ 2  : Tiếng Nhật 1</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên có kiến thức về các hệ cơ sở dữ liệu với các mô hình cơ sở dữ liệu quan hệ.</li>
-                        <li>Sinh viên được thực hành các bài lập trình hướng đối tượng với ngôn ngữ Java.</li>
-                        <li>SSinh viên nắm vững các khái niệm cơ bản về cấu trúc dữ liệu và các thuật toán được cài đặt cho các cấu trúc dữ liệu, sử dụng ngôn ngữ Java để minh họa.</li>
-                        <li>Sinh viên sử dụng Tiếng Nhật ở mức độ căn bản: đọc, viết, giao tiếp ở môi trường làm việc.</li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 4</td>
-                    <td>
-                        <li>Nhập môn Kỹ thuật Phần mềm</li>
-                         <li>Phát triển ứng dụng Java Web</li>
-                        <li>Xác xuất thống kê</li>
-                        <li>Tiếng Nhật sơ cấp 2 – Định hướng công nghiệp</li>
-                        <li>Mạng máy tính                        </li>
-                    </td>
-                    <td>
-                        <li>Sinh viên nắm vững quy trình phát triển phần mềm, bao gồm các quy trình sử dụng trong ngành công nghệ phần mềm: Water Fall, Spiral, Interative Development, Agile.</li>
-                        <li>Sinh viên sử dụng thông thạo ngôn ngữ thiết kế phần mền UML.</li>
-                        <li>Sinh viên sử dụng Tiếng Nhật ở mức độ căn bản: đọc, viết, giao tiếp ở môi trường làm việc.</li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 5</td>
-                    <td>
-                        <li>Lập trình hệ thống</li>
-                         <li>Mật mã ứng dụng</li>
-                        <li>Internet vạn vật</li>
-                         <li>Xác suất thống kê</li>
-                         <li>Ngoại ngữ 2  : Tiếng Nhật 2</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên có kiến thức về thiết kế và viết các chương trình máy tính cho phép phần cứng máy tính.</li>
-                        <li>Sinh viên hiểu về mật mã, khoa học tạo và phá mã và mật mã.</li>
-                        <li> viên có kiến thức chung về các tiến trình và vòng đời trong Kỹ thuật phần mềm và quản lý các dự án.</li>
-                        <li>Sinh viên được tiếp cận với các kiến thức cơ bản của Internet vạn vật.</li>
-                        <li>Sinh viên sử dụng Tiếng Nhật ở mức độ nâng cao: đọc, viết, giao tiếp ở môi trường làm việc.</li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 6</td>
-                    <td>
-                        <li>Quản trị rủi ro trong hệ thống thông tin</li>
-                        <li>Phát triển chính sách ATTT</li>
-                        <li>Hệ thống nguồn mở và quản trị mạng</li>
-                        <li>Quản trị dự án</li>
-                        <li>Luật không gian mạng và đạo đức CNTT</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên biết cách đánh giá và quản lý rủi ro dựa trên việc xác định mức độ rủi ro chấp nhận được cho các hệ thống thông tin.</li>
-                        <li>Sinh viên được giới thiệu về mạng máy khách / máy chủ nguồn mở, các khái niệm bảo mật và bảo mật thông tin cơ bản.</li>
-                        <li>Sinh viên biết cách Quản trị dự án nói chung và dự án CNTT nói riêng một cách hiệu quả. </li>
-                        <li>Sinh viên nắm vững các vấn đề liên quan đến đạo đức của người làm CNTT và người dùng CNTT, sở hữu trí tuệ, an toàn và bảo mật, tội phạm máy tính và Internet…</li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 7</td>
-                    <td>
-                        <li>Thực tập làm việc thực tế tại doanh nghiệp</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên làm việc thực tế từ 4 – 8 tháng tại các công ty thành viên thuộc tập đoàn FPT hoặc hơn 300 doanh nghiệp là đối tác của tập đoàn FPT trên toàn thế giới.</li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 8</td>
-                    <td>
-                        <li>Phân tích mã độc và kỹ thuật dịch ngược</li>
-                        <li>Điều tra số </li>
-                        <li>Phương pháp nghiên cứu</li>
-                        <li>Môn chuyên ngành tự chọn 1</li>
-                        <li>Môn chuyên ngành tự chọn 2</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên có khả năng tạo lập được những phần mềm cho hệ thống. </li>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-weight: 500;">HỌC KỲ 9</td>
-                    <td>
-                        <li>Thâm nhập thử và phòng thủ</li>
-                        <li>Môn chuyên ngành tự chọn 3</li>
-                        <li>Môn chuyên ngành tự chọn 4</li>
-                        <li>Môn chuyên ngành tự chọn 5</li>
-                    </td>
-                    <td>
-                        <li>Sinh viên học cách phòng thủ tin tặc bằng cách áp dụng các kỹ thuật hack như chính các hacker mũ đen. </li>
-                        <li>Sinh viên lên ý tưởng, lập kế hoạch và hoàn thành những dự án trong sự định hướng, hỗ trợ của giảng viên. </li>
-                    </td>
-                  </tr>
-                  
-                </tbody>
-            </table>
-            <h1 class="heading" style="margin-top:5%" >Những chuyên gia và sinh viên nói gì về ngành quản trị <br> dịch vụ du lịch và lữ hành</h1>
-            <div class="row" style="margin-top:5%;margin-bottom: 10%;">
-                <div class="col-lg-6" >
-                    <div class="quote-str" >
-                        <div class="sign" >
-                            <i class="fas fa-quote-left" style="float: left;"></i>
-                        </div>
-                        <div class="quote">
-                            <p>Kiến thức ngành An toàn Thông tin rất rộng, những điều nhà trường dạy là kiến thức nền tảng giúp các bạn sinh viên hiểu về ngành và xác đinh hướng đi cho mình. Lựa chọn đúng chuyên môn mình yêu thích, muốn phát triển, sẽ giúp các bạn trau dồi kỹ năng của mình. Điều này rất cần thiết cho ngành An toàn Thông tin”.
-                            </p>
-                        </div>
-                        <div style="width:calc(100% - 100px);padding-bottom: 1%;position: absolute;bottom: 2%;">
-                            <h1 style="font-size: 19px">TÔ THÀNH THUYỀN</h1>
-                            <p style="color: #ff6500;">Cựu sinh viên ngành, Đại học FPT, Chuyên viên Quản trị Hạ tầng Ứng dụng và CSDL ngân hàng HD Bank</p>
-                        </div>
-                        <div class="avatar container" style="background: url(https://uni.fpt.edu.vn/Data/Sites/1/News/384/pham-to-hoai.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="quote-str" >
-                        <div class="sign" >
-                            <i class="fas fa-quote-left" style="float: left;"></i>
-                        </div>
-                        <div class="quote">
-                            <p>Tại Đại học FPT, sinh viên được thực hành nhiều hơn nên có thể đi làm ở các công ty ngay từ năm hai mà không gặp nhiều khó khăn”.
-                            </p>
-                        </div>
-                        <div style="width:calc(100% - 100px);padding-bottom: 1%;position: absolute;bottom: 2%;">
-                            <h1 style="font-size: 19px">THS NGÔ ĐĂNG HÀ AN</h1>
-                            <p style="color: #ff6500;">Giảng viên Trường Đại học FPT</p>
-                        </div>
-                        <div class="avatar container" style="background: url(https://uni.fpt.edu.vn/Data/Sites/1/News/383/tran-anh-tuan.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
-                            
-                        </div>
-                    </div>
-                </div>
+          <!-- Vovinam -->
+          <div class="container big fade-in " style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde slide-in" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin " style="text-align: center;padding-top: 5%;font-size: 45px;">Vovinam</h2>
+              <p class="para " style="text-align: center;padding-top: 5%;font-size: 25px;"> <br> FPTU Vovinam Club (FVC) là câu lạc bộ võ thuật của trường Đại học FPT, được thành lập từ 6/6/2009. Là một trong những CLB lâu đời và có bảng thành tích nhiều nhất nhì xứ Hola, FVC luôn giữ trong mình tinh thần võ đạo và nhiệt huyết, gắn liền với slogan "Pain is temporary - Glory lasts forever</p>
             </div>
+            <div class="row button_group slide-in" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11" onclick="changeWeb()"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- TAEKWONDO -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Taekwondo</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> <br> Có cơ hội tìm hiểu thêm về loại hình thể thao là bộ môn võ thuật,đến tham gia tập võ và xả các năng lượng tiêu cực sẽ giúp bạn giải trí và giảm stress hiệu quả, tạo mối quan hệ thân thiện với nhiều người, tham gia các kỳ thi thăng đai đẳng, thi đấu trong tỉnh, quốc gia.</p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- MUAY Thai -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Muay Thai</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">FMUC - nơi các bạn được thỏa mãn đam mê của mình và có rất nhiều cơ hội được rèn luyện bản thân.FMUC là một môi trường tuyệt vời để các bạn thỏa sức tìm tòi, trau dồi thêm kỹ năng về chuyên môn , kỹ năng mềm trong cuộc sống. Đến với FMUC là đến với niềm đam mê Muay Thái và sự yêu thương của chuyến tàu vĩnh cửu FMUC.</p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Basketball -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">FPT Basketball Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"><br> <br> Nơi sinh hoạt hàng tuần của các thanh niên máu me quần đùi áo số tranh nhau quả bóng cam ở FPT Hà Nội tại Hòa Lạc <br><br><br>
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- soccer -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">FPT Football Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> Đây là câu lạc bộ bóng đá độc nhất của trường đại học FPT với đông đảo các thành viên tham gia trong 3 năm trở lại đây. Câu lạc bộ được thành lập nên nhằm tạo ra sân chơi cho những người đam mê môn thể thao vua.. Câu lạc bộ như một mái nhà thứ 2 giúp sinh viên cán bộ rèn luyện sức khỏe, đùm bọc lẫn nhau khi xa nhà.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- BADMINTON -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">FPTU Badminton</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> <br> Câu lạc bộ FBC tập trung chính vào rèn luyện thân thể, khả năng dẻo dai và hệ thống vận động của các sinh viên trong bộ môn đánh cầu lông. Không chỉ là một clb thể thao, FBC còn là một gia đình nhỏ của ĐH FPT nơi bạn được tha hồ thể hiện bản thân, giao lưu kỹ năng và tham gia các giải đấu lớn nhỏ của trường.</p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- FuStreetWorkout -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Street Workout Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> <br> <br> Không bị bó buộc bởi phòng tập và máy móc, chỉ đơn giản với những thanh xà đơn và xà kép.   FU Street Workout là nơi tập trung các bạn trẻ yêu thích Calisthenics và Street Workout tại khuôn viên KTX Hòa Lạc - Đại học FPT .     </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- GYM -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Gym</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"><br> <br> <br> Nơi những con người yêu thích vẻ đẹp hình thể và sức mạnh của FU tụ họp cùng nhau và nảy sinh tình cảm.<br><br></p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Esport -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">FPTU Esport Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> Không cần phải nói nhiều, nhìn tên cái là biết luôn. FEC là clb thể thao điện tử của trường ĐH FPT, nếu như bạn là người đam mê bộ môn Liên Minh Huyền Thoại thì chắc chắn biết đến đội tuyển của Hòa Lạc Campus với nhiều giải lớn nhỏ.Ngoài ra FEC là một cộng đồng  của các gamer để trau dồi kỹ năng,tìm bạn chơi đêm hay đơn giản là gặp mặt tâm sự.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- SKATE -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">FPTU ISkate</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"><br> <br> Không chỉ là một clb của những bạn trẻ mang trong mình đam mê trượt ván mà ISC còn là một đại gia đình với các đàn anh đàn chị cùng những người em mang trong mình nhiệt huyết của tuổi trẻ, đam mê với bộ môn skateboard.<br></p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- FptVolleyballClub -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Fpt Volleyball Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"><br> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus veniam incidunt pariatur alias at, dolorum, sapiente distinctio a, perferendis cum ad fugiat possimus. Ullam aut reprehenderit repellat omnis dolore tempora!<br></p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- table tennis Club -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">CLB table tenis</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> CLB đã có rất nhiều đóng góp và cống hiến, điều đó được ghi nhận với nhiều sự kiện lớn. CLB Bóng Bàn luôn không ngừng giao lưu học hỏi giữa các thành viên với nhau, mà còn với các clb quanh khu vực Đại Học FPT. Với mục tiêu này, trong những năm qua CLB đã rèn luyện và được thi đấu tại đại hội thể dục thể thao toàn quốc.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Rít More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- CON NHI KHUC -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">CLB Côn Nhị Khúc</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> <br> <br> Đến với FNC - Nunchaku Club, bạn không chỉ có được một  vũ khí tự vệ, một sức khỏe dẻo dai, khả năng tập trung và sáng tạo mà còn mất đi những áp lực lẫn nỗi buồn vì đến với FNC, bạn đã là thành viên trong đại gia đình không “rùa”.       <br>             </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Kickfit -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Kickfit</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;"> Bạn muốn có một thân hình khỏe đẹp ? Bạn muốn có cho mình một PT chuyên biệt lo thực đơn ăn uống hợp lý ? Vậy thì hãy đến ngay với clb KickFit. FKC tập trung chủ yếu vào việc rèn luyện thân thể và kích thích các chức năng của cơ thể sao cho chúng hoạt động một cách hoàn thiện nhất để tạo cho bạn sự tự tin dưới ánh nhìn của mọi người.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- BUSSINESS -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">FU Bussiness</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Câu lạc bộ Kinh Doanh môi trường cho cộng đồng sinh viên của ngành Kinh tế nói riêng và toàn trường nói chung có niềm yêu thích với lĩnh vực kinh doanh được tự do giao lưu, học hỏi kinh nghiệm và phát triển bản thân
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+            <!-- iGo -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">iGo</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Có người nói chúng tôi là 1 đội chưa đủ tầm để thành 1 tổ chức tình nguyện vì cộng đồng. Nhưng với lòng nhiệt huyết của các tình nguyện viên chúng tôi sẵn sàng góp sức trẻ, giúp cuộc sống của những bất hạnh trên thế giới này có thêm giây phút ấm áp từ chính những người Việt trẻ.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- CLB TIENG TRUNG -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">CLB Tiếng Trung</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">FCC là câu lạc bộ học thuật của trường Đại học FPT có khả năng trau dồi cũng như dạy thêm kiến thức về tiếng Trung cho các bạn sinh viên của FPT,tham gia clb tiếng Trung còn được học hỏi rất nhiều về kỹ năng truyền thông và được thoải mái thể hiện bản thân ở các lĩnh vực chuyên ngành khác nhau.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- NO SHY -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">No Shy Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Với mục đích mang đến cho các bạn sinh viên môi trường giao lưu, rèn luyện khả năng tiếng Anh, thực hành kỹ năng mềm. No Shy,là nơi mà tất cả các cá tính đều được chào đón, mỗi người đều có thể trở về với đúng bản sắc của mình mà không một chút ngại ngần.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- BOOK -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Book Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">CLB dành cho những bạn trẻ không chỉ yêu thích sách, mà còn là văn hoá, tri thức, nghệ thuật sống nói chung.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- ENGLISH -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">English Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">FEC mong muốn tạo ra một cộng đồng các bạn trẻ mang trong mình niềm đam mê với tiếng Anh, muốn biến tiếng Anh trở thành lợi thế cạnh tranh trong tương lai của bản thân hay chỉ đơn giản coi tiếng Anh giống như là một sở thích cá nhân
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- DEBATE -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Debate Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Nơi tạo ra môi trường để bạn sẵn sàng nói lên quan điểm và phản biện mà không bị phán xét. Đến với FDC, bạn sẽ tự trả lời được những câu hỏi mở đầu cùng với những thắc mắc bấy lâu nay về mọi vấn đề trong xã hội.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- PSYCHOLOGY -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">CLB Tâm Lý Học</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">"CLB Tâm Lý" được thành lập với mong muốn tạo lên môi trường cho các bạn sinh viên có cơ hội được tìm hiểu, học tập, khám phá bản thân mình, giải mã những điều bí ẩn đằng sau những hành vi cảm xúc lời nói. 
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- DANGO -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Dango Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Câu lạc bộ Dango là một câu lạc bộ chuyên về văn hóa giải trí Nhật Bản. CLB là nơi giao lưu, thảo luận cho các bạn có chung đam mê với nền văn hóa hấp dẫn của xứ sở Phù Tang này. Nếu bạn có sở thích về manga, anime, cosplay... thì đại gia đình Dango là nơi dành cho bạn.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- MÂY MƯA -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">CLB Mây mưa</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">CLB Mây mưa  là 1 câu lạc bộ được thành lập với mục tiêu tạo 1 sân chơi,những ai yêu thích đất nước, con người và nền văn hóa Nhật Bản. Câu lạc bộ sinh hoạt hàng tuần theo các chủ đề về văn hóa Nhật Bản như: ẩm thực, nghệ thuật, phong tục truyền thống.....
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- AI -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Artificial Intelligence</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">AI Club là CLB trí tuệ nhân tạo đầu tiên của FPTU với mục đích tạo ra môi trường học thuật, thúc đẩy nghiên cứu và ứng dụng trí tuệ nhân tạo vào thực tế.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- JSCLUB -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Japanese Software Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">JS Club là câu lạc bộ Kỹ sư phần mềm Nhật Bản, nơi hội tụ của những bạn đam mê tiếng Nhật và lập trình.</p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Ethical Hacker Club -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Ethical Hacker Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Nếu như chỉ ngồi trước máy tính thôi thì chưa đủ ngầu, tại sao lại không đến với EHC? Ethical Hacker Club là một clb về an toàn và bảo mật thông tin thuộc đại học FPT, biến bạn thành một hacker mũ trắng đúng nghĩa, được giao lưu và gia nhập các cuộc thi bảo mật của các đàn anh khóa trước.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Guitar -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Guitar</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Bạn là một người yêu ca nhạc ? Bạn có tinh thần học hỏi, đoàn kết, luôn sẵn sàng có mặt mỗi khi được giao việc ? .Và quan trọng hơn cả bạn luôn hòa đồng, nhiệt huyết? Vậy thì chào mừng bạn đến với Clb FGC, một nơi mà giai điệu của chiếc guitar đủ để làm bạn say đắm.                    
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- NHẠC CỤ DÂN TỘC -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">CLB Nhạc cụ truyền thống</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis libero repellat minima veritatis, aperiam culpa exercitationem ipsam, earum dolorum quos reprehenderit corrupti. Iure modi amet, architecto omnis eaque consequatur ea!
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Melody -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Melody</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Ngoài việc là CLB Âm Nhạc của Đại Học FPT. Melody còn là một mái nhà đầy yêu thương, nơi mọi người chia sẻ nỗi buồn, niềm vui qua những câu hát với nhau. Nơi ngập tràn tiếng cười sau những ngày học hành vất vả.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Soleilcrew-->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Soleil Crew FPTU</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Soleil Crew là nhóm nhảy thuộc Đại học FPT Hà Nội, được thành lập vào năm 2016 bởi An Du – sinh viên K12 đồng thời là Miss FPTU 2018. Đến với Soleil là bạn đã đến với hội nhảy chơi đủ loại phong cách. Chính vì vậy nên SC luôn được các bạn trẻ săn đón vì sự nhiệt tình, trẻ trung và phá cách.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- Fpt Hiphop Club -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Fpt Hiphop Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">HFU là nơi mọi người thỏa mãn niềm đam mê nhảy với rất nhiều những thể loại khác nhau như Breaking, Popping, Hiphop Dance, Locking... Và quan trọng nhất: Hiphop không chỉ là những bước nhảy, Hiphop còn là một nền văn hóa, một phong cách sống của một cộng đồng
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- PHOTOGRAPHY -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">Photography Club</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed soluta, tempore quod dolore laboriosam placeat quia? Odio veniam doloribus, quos, aspernatur laudantium aperiam cumque dicta ipsam alias neque reiciendis maxime.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- CLB Điện Ảnh -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;"> CLB Điện Ảnh</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">>Là nơi cho sinh viên yêu thích phim, thưởng thức phim và những người muốn học hỏi, sáng tạo và thử mình trong lĩnh vực điện ảnh một nhóm chịu trách nhiêm chính trong các khâu quay, dựng phim tài liệu về các sự kiện tiêu biểu của Đại Học FPT
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- HebeFPT -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">HebeFPT</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Tiền thân với tên gọi Văn Hóa Nghệ Thuật là CLB múa đầu tiên và duy nhất tại trường Đại học FPT. Đến với Hebe bạn sẽ được training về rất nhiều thể loại múa khác nhau, được có cơ hội được biểu diễn trên nhiều sân khấu lớn và được xây dựng đa dạng các kỹ năng ở các lĩnh vực khác nhau.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- FU Designers -->
+          <div class="container big disappear" style="display:flex;border-radius: 20px;justify-content: center;align-items: center;background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin-top: 10%;padding: 0;">
+            <div class="container carde" style="position: relative;padding-top: 5%;margin-bottom: 13%;">
+              <h2 class="headin" style="text-align: center;padding-top: 5%;font-size: 45px;">FU Designers</h2>
+              <p class="para" style="text-align: center;padding-top: 5%;font-size: 25px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus necessitatibus sed harum. Quasi sint similique fuga amet temporibus molestiae dicta commodi dignissimos, atque quis ex autem repellat deleniti accusamus at.
+              </p>
+            </div>
+            <div class="row button_group" style="margin-bottom: 10%;margin-right: 0;margin-left: 0;">
+              <div class="col-md-4" style="padding: 0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="prev()" style="float:left;margin-left:0;"><span>Prev</span></button>
+              </div>
+              <div class="col-md-4" style="padding:0;display: flex;justify-content: center;width: 40%;">
+                <button class="custom-btn btn-11"  >Read More<div class="dot"></div></button>
+              </div>
+              <div class="col-md-4" style="padding  :0;width: 30%;">
+                <button class="custom-btn btn-7" onclick="next()" oncl style="float:right;margin-right: 0;"><span>Next</span></button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-3" style="display: block;justify-content: center;align-items: center;height: 100vh;margin-top: 0;">
+          <div class="container wrapper" >
+            <div class="song-details">
+              <p class="name"></p>
+              <p class="artist"></p>
+            </div>
+            <div class="img-area">
+              <img src="" class="img-fluid" alt="">
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+              </div>
+              <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+              </div>
+            </div>
+            <div class="controls">
+              <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+              <i id="prev" class="material-icons">skip_previous</i>
+              <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+              </div>
+              <i id="next" class="material-icons">skip_next</i>
+              <i id="more-music" class="material-icons">queue_music</i>
+            </div>
+            <div class="music-list" >
+              <div class="header">
+                <div class="row" style="display:block;justify-content: left;float: left;flex: none;">
+                  <i class= "list material-icons">queue_music</i>
+                  <span>Music list</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+              </div>
+              <ul>
+                <!-- here li list are coming from js -->
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-2" style="margin-left: 2%;">
-            <div class="container contact">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fas fa-envelope"></i></a>
-                <a href=""><i class="fas fa-phone"></i></a>
-            </div>
-            <div class="title_str" >
-                <h1 class="title" style="font-size: 25px;text-align: center;color: #fff">Cơ hội việc làm</h1>
-            </div>
-            <div class="clubs_str">
-                <div class="clubs-list container">
-                    <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;"> Analyst System</h2>
-                    <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Chuyên gia phân tích hệ thống</a>
-                </div>
-                <div class="clubs-list container">
-                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;"> Information Assurance Specialist</h2>
-                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Chuyên viên an toàn thông tin</a>
-                </div>
-                <div class="clubs-list container">
-                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">System Designer</h2>
-                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Chuyên gia thiết kế hệ thống </a>
-                </div>
-                <div class="clubs-list container">
-                        <h2 style="font-size: 18px;color: #000;font-weight: 600;font-size: 110%;margin: 0;">System Assesser</h2>
-                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 18px;margin: 10%;">Chuyên viên đánh giá hệ thống </a>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="position: absolute;bottom: -6%;right: 21%;height: 100px;width: 67%;border-radius: 20px;">
-            <div class="col-lg-6 " id="mp3" style="display: flex;justify-content:center;padding: 0;">
-                <div class="container wrapper BG" id="contain"  >
-                    <i class="fas fa-caret-square-down disappear" id="drop" onclick="disappear()" style="position: absolute;top: 2%;right: 2%;font-size: 37px;color: #fff;    transition: all 1s cubic-bezier(0.5, 0.5, 0.5, 0.5);"></i>
-                    <div class="song-details disappear" id="song-details">
-                      <p class="name"></p>
-                      <p class="artist"></p>
-                    </div>
-                    <div class="img-area margin" id="img-area">
-                      <img src="" class="img-fluid" alt="">
-                    </div>
-                    <div class="progress-area disappear" id="progress-area">
-                      <div class="progress-bar">
-                        <audio id="main-audio" src=""></audio>
-                      </div>
-                      <div class="song-timer">
-                        <span class="current-time">0:00</span>
-                        <span class="max-duration">0:00</span>
-                      </div>
-                    </div>
-                    <div class="controls ">
-                      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
-                      <i id="prev" class="material-icons">skip_previous</i>
-                      <div class="play-pause">
-                        <i class="material-icons play" id="play" >play_arrow</i>
-                      </div>
-                      <i id="next" class="material-icons">skip_next</i>
-                      <i id="more-music" class="material-icons" onclick="appear()">queue_music</i>
-                    </div>
-                    <div class="music-list " >
-                      <div class="header">
-                        <div class="row" style="display:block;justify-content: left;float: left;flex: none;">
-                          <i class= "list material-icons">queue_music</i>
-                          <span>Music list</span>
-                        </div>
-                        <i id="close" class="material-icons">close</i>
-                      </div>
-                      <ul>
-                        <!-- here li list are coming from js -->
-                      </ul>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-6"></div>
     </div>
     
  
     
     
-    <script>
-        var song_details = document.getElementById('song-details')
-        var img_area = document.getElementById('img-area')
-        var progress_area = document.getElementById('progress-area')
-        var mp3 = document.getElementById('mp3')
-        var play = document.getElementById('play')
-        var contain = document.getElementById('contain')
-        var drop = document.getElementById('drop')
-        function appear()
+      <input type="text" style="border: transparent;background: transparent;color: transparent;" value="luandthe160124@fpt.edu.vn" id="myInput1">
+      <input type="text" style="border: transparent;background: transparent;color: transparent;" value="113" id="myInput2">
+
+     
+     <script>
+       function changeWeb()
+       {
+        window.location.replace("vovinam.html");
+       }
+         var $calendar;
+  $(document).ready(function () {
+    let container = $("#container").simpleCalendar({
+      fixedStartDay: 0, // begin weeks by sunday
+      disableEmptyDetails: true,
+    });
+    new Date
+    $calendar = container.data('plugin_simpleCalendar')
+  });
+     </script>
+     <script>
+      let BackGroundList = [
         {
-            song_details.classList.remove('disappear')
-            img_area.classList.remove('margin')
-            progress_area.classList.remove('disappear')
-            contain.classList.remove('BG')
-            drop.classList.remove('disappear')
-        }
-        function disappear()
+          background:"url(martial.png)"
+        },
         {
-            song_details.classList.add("disappear")
-            img_area.classList.add('margin')
-            progress_area.classList.add("disappear")
-            contain.classList.add('BG')
-            drop.classList.add("disappear")
+          background:"url(taekwondo.png)"
+        },
+        {
+          background:"url(muay.png)"
+        },
+        {
+          background:"url(basketball.png)"
+        },
+        {
+          background:"url(soccer.png)"
+        },
+        {
+          background:"url(badminton.png)"
+        },
+        {
+          background:"url(bar.png)"
+        },
+        {
+          background:"url(gym.png)"
+        },
+        {
+          background:"url(esports.png)"
+        },
+        {
+          background:"url(skateboard.png)"
+        },
+        {
+          background:"url(voleyball.png)"
+        },
+        {
+          background:"url(table-tennis.png)"
+        },
+        {
+          background:"url(nunchaku.png)"
+        },
+        {
+          background:"url(kickboxer.png)"
+        },
+        {
+          background:"url(bussiness.png)"
+        },
+        {
+          background:"url(heart.png)"
+        },
+        {
+          background:"url(chinese.png)"
+        },
+        {
+          background:"url(confidence.png)"
+        },
+        {
+          background:"url(book.png)"
+        },
+        {
+          background:"url(english.png)"
+        },
+        {
+          background:"url(debate.png)"
+        },
+        {
+          background:"url(psychology.png)"
+        },
+        {
+          background:"url(japan.png)"
+        },
+        {
+          background:"url(rain.png)"
+        },
+        {
+          background:'url(AI.png)'
+        },
+        {
+          background:'url(software.png)'
+        },
+        {
+          background:'url(hacker.png)'
+        },
+        {
+          background:'url(guitar.png)'
+        },
+        {
+          background:'url(biwa.png)'
+        },
+        {
+          background:'url(music.png)'
+        },
+        {
+          background:'url(bboy.png)'
+        },
+        {
+          background:'url(hiphop.png)'
+        },
+        {
+          background:'url(camera.png)'
+        },
+        {
+          background:"url(clapperboard.png)"
+        },
+        {
+          background:'url(dance.png)'
+        },
+        {
+          background:'url(design.png)'
         }
+
+       ]
+      var slidingTagLiAfterStyle = document.createElement("style");
+        slidingTagLiAfterStyle.innerHTML =
+        ".carde:after {background:" + BackGroundList[0].background + "}"
+        document.head.appendChild(slidingTagLiAfterStyle);
+      big  = document.getElementsByClassName("big")
+      headin = document.getElementsByClassName('headin')
+      para = document.getElementsByClassName('para')
+      count = 0
+      function next()
+      {
+        console.log(BackGroundList.length)
+        console.log(count)
+        console.log("WORK")
+        if(count < BackGroundList.length-1)
+        {
+          big[count].classList.add('disappear')
+          big[count+1].classList.remove( 'disappear')
+          slidingTagLiAfterStyle.innerHTML = slidingTagLiAfterStyle.innerHTML.replace("background:"+BackGroundList[count].background,"background:"+BackGroundList[count+1].background)
+          count++
+        }
+        else if(count == BackGroundList.length-1)
+        {
+          big[count].classList.add('disappear')
+          big[0].classList.remove( 'disappear')
+          slidingTagLiAfterStyle.innerHTML = slidingTagLiAfterStyle.innerHTML.replace("background:"+BackGroundList[count].background,"background:"+BackGroundList[0].background)
+          count=0
+        }
+      }
+      function prev()
+      {
+        console.log("WORK")
+        if(count > 0)
+        {
+          big[count].classList.add( 'disappear')
+          big[count-1].classList.remove( 'disappear')
+          slidingTagLiAfterStyle.innerHTML = slidingTagLiAfterStyle.innerHTML.replace("background:"+BackGroundList[count].background,"background:"+BackGroundList[count-1].background)
+          count--
+        }
+        else if(count == 0)
+        {
+          big[count].classList.add( 'disappear')
+          big[BackGroundList.length-1].classList.remove( 'disappear')
+          slidingTagLiAfterStyle.innerHTML = slidingTagLiAfterStyle.innerHTML.replace("background:"+BackGroundList[count].background,"background:"+BackGroundList[BackGroundList.length-1].background)
+          count=BackGroundList.length-1
+        }
+      }
+        
+      function getValue()
+      {
+        var form = document.getElementsByClassName('form-control')[0].value
+        var data = form.toLowerCase()
+        clubs = ['vovinam','taekwondo','muaythai','basketball','football','badminton','streetworkout','gym','esport','skate','voleyball','table tennis','côn nhị khúc','kickfit','bussiness','igo','tiếng trung','no shy','sách','tiếng anh','debate','tâm lý','dango','mây mưa','trí tuệ nhân tạo','japanese softeware','hacker','guitar','nhạc cụ','melody','soleil crew','hiphop','photography','ảnh','hebe','thiết kế']
+        var check
+        var pos
+        var bool
+        console.log(clubs.length)
+        console.log(big.length)
+        for(i=0,j=0;j<clubs.length,i<clubs.length;j++,i++)
+        {
+          if(big[j].classList.contains('disappear')==false) check = j
+          else if(data.includes(clubs[i])) 
+          {
+            pos = i
+            bool = 1
+            count = pos
+          }
+        }
+        if(bool == 1) 
+        {
+          big[check].classList.add('disappear')
+          big[pos].classList.remove('disappear')
+          slidingTagLiAfterStyle.innerHTML = slidingTagLiAfterStyle.innerHTML.replace("background:"+BackGroundList[check].background,"background:"+BackGroundList[pos].background)
+          bool = 0
+        }
+        var bolean = 0
+        for(i=0;i<clubs.length;i++)
+        {
+          if(data.includes(clubs[i]) == false)
+          {
+            bolean = bolean + 1
+          }
+        }
+        if(bolean == clubs.length)
+        {
+          alert("không có clb này")
+          bolean = 0
+        } 
+        console.log(bolean)
+     
+      }
+          
+     </script>
+      <script>
+         
+        const faders = document.querySelectorAll('.fade-in');
+        const sliders = document.querySelectorAll('.slide-in')
+        const appearOptions = {
+        };
+        const appearOnScroll = new IntersectionObserver(function(
+            entries,
+            appearOnScroll
+        ){
+            entries.forEach(entry => {
+                if (!entry.isIntersecting)
+                {
+                    return;
+                }
+                else
+                {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target)
+                }
+            });
+        },
+        appearOptions);
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+        sliders.forEach(slider => {
+            appearOnScroll.observe(slider)
+        })
+     </script>
+     <script>
+      $(document).ready(function(){
+      if($(".month").text() == "july 2021")
+       {
+         for(i = 0 ;i< $(".day").length;i++)
+         {
+           console.log("worded")
+           if($(".day")[i].textContent == "7")
+           {
+             console.log('worked')
+             $(".day")[i].classList.add("has-event")
+             $(".day")[i].classList.remove("disabled")
+           }
+         }
+         var $event = $('' +
+         '<div class="event">' +
+         ' <div class="event-hour">' + "8h00" + '</div>' +
+         ' <div class="event-date">' +"Wednesday,June 7, 2021"+ '</div>' +
+         ' <div class="event-summary">' + "Kì thi trung học phổ thông quốc gia" + '</div>' +
+         '</div>');
+         
+         $(".has-event").click(function(){
+           $(".event-wrapper").append($event)
+         });
+       }
+     });
     </script>
-    
-   
-
-    <script src="js/music-list.js"></script>
-    <script src="js/script.js"></script>
-
-     
-     
+     <script src="js/music-list.js"></script>
+     <script src="js/script.js"></script>
+     <script src="calendar.js"></script>
       
 </body>
 </html>
