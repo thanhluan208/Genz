@@ -450,9 +450,7 @@
     }
     .wrapper
     {
-        position: unset !important;
-        bottom: unset;
-        width: 80%;
+       display: none;
     }
     .controls i
     {
