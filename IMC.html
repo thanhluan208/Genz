@@ -46,14 +46,14 @@
                 
             </div>
             <div class="navi_str" style="display: inline-grid;margin-top: 70%;width: 100%;">
-                <a class="navi" href="index.html"><i class="fas fa-home"></i></a>
-                <a class="navi" href="test.html"><i class="fas fa-university"></i></a>
-                <a  class="navi" href=""><i class="far fa-calendar-check"></i></a>
-                <a class="navi" href=""><i class="far fa-newspaper"></i></a>
-                <a class="navi" href="About.html"><i class="fas fa-users"></i></a>
+                <a class="navi hard" href="index.html" data-tippy-content = "Home"><i class="fas fa-home"></i></a>
+                <a class="navi hard" href="test.html" data-tippy-content = "Clubs in FPT"><i class="fas fa-university"></i></a>
+                <a  class="navi hard" href="event.html"data-tippy-content = "Event"><i class="far fa-calendar-check"></i></a>
+                <a class="navi hard" href="Article.html"data-tippy-content = "Article"><i class="far fa-newspaper"></i></a>
+                <a class="navi hard" href="About.html"data-tippy-content = "About us"><i class="fas fa-users"></i></a>
             </div>
             
-            <div class="quit"><a href="university.html"><i class="fas fa-power-off"></i></a></div>
+            <div class="quit"><a href="university.html"data-tippy-content = "FPT university"><i class="fas fa-power-off"></i></a></div>
         </div>
         <div  class="col-lg-8 content" >
             <h1 class="heading">
@@ -886,32 +886,38 @@
     
    
 
-    <script>
-        var song_details = document.getElementById('song-details')
-        var img_area = document.getElementById('img-area')
-        var progress_area = document.getElementById('progress-area')
-        var mp3 = document.getElementById('mp3')
-        var play = document.getElementById('play')
-        var contain = document.getElementById('contain')
-        var drop = document.getElementById('drop')
-        function appear()
-        {
-            song_details.classList.remove('disappear')
-            img_area.classList.remove('margin')
-            progress_area.classList.remove('disappear')
-            contain.classList.remove('BG')
-            drop.classList.remove('disappear')
-        }
-        function disappear()
-        {
-            song_details.classList.add("disappear")
-            img_area.classList.add('margin')
-            progress_area.classList.add("disappear")
-            contain.classList.add('BG')
-            drop.classList.add("disappear")
-        }
-    </script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     
+    
+   <script>
+       tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+            tippy('button', {
+        onMount(instance) {
+            const box = instance.popper.firstElementChild;
+            requestAnimationFrame(() => {
+            box.classList.add('animated');
+            box.classList.add('wobble');
+            });
+        },
+        onHidden(instance) {
+            const box = instance.popper.firstElementChild;
+            box.classList.remove('animated');
+            box.classList.remove('wobble');
+        },
+        });
+   </script>
    
 
     <script src="js/music-list.js"></script>

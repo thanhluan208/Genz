@@ -1,3 +1,13 @@
+.tippy-box[data-theme~='tomato'] {
+  background: tomato;
+  border: 1px solid yellow;
+  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+}
+.tippy-box[data-theme~='tomato'] > .tippy-arrow::before {
+  transform: scale(2);
+  border: 1px solid tomato;
+}
 body 
 {overflow: hidden;}
 .clubs-list h2
@@ -159,7 +169,7 @@ a:hover
     margin-bottom: 3%;
     margin-left: 5%;
     overflow: auto;
-    max-height: 88%;
+    max-height: 95%;
 }
 .content::-webkit-scrollbar {
     width: 20px;
