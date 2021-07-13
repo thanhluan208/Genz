@@ -21,11 +21,11 @@
 </head>
 <style>
 </style>
-<body>
+<body style="overflow-x: unset;margin-bottom:  5%;">
     <div id="scrollPath" ></div>
     <div id="progressbar" ></div>
     <div class="container-fluid-md heading " id="navbar" style="padding-left:2%;padding-right:2%;transition: opacity 250ms ease-in">
-        <nav class="navbar navbar-expand-md navbar-dark" id="nav" style="backdrop-filter: blur(100px);-webkit-backdrop-filter: blur( 40px );position: absolute;">
+        <nav class="navbar navbar-expand-md navbar-dark" id="nav" style="backdrop-filter: blur(100px);-webkit-backdrop-filter: blur( 40px );position: fixed;">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: 1px solid rgba(255, 102, 0, 0.925);z-index: 1000;">
             <span class="navbar-toggler-icon" style = "color: rgba(255, 102, 0, 0.925);"></span>
           </button>
@@ -67,7 +67,12 @@
           </div>  
         </nav>   
       </div>
-    <div class="row " style="margin-top: 15%;width: 80%;margin-left: 10%;">
+      <ul id="IconContainer" class="list-group fade-in" style="opacity: 1;margin-bottom: 2%;">
+        <li id="icon"class="list-group-item" style="border: none;"><a class="list-item " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="https://www.facebook.com/luancanvieclam/" id="link"><i class="fab fa-facebook-f" ></i></a></li>
+        <li id="icon"class="list-group-item" style="border: none;"><a class="list-item " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" id="link" ><i class="fas fa-envelope hard" onclick="myFunction1()" data-tippy-content = "thesteam.fpt@gmail.com"></i></a></li>
+        <li id="icon"class="list-group-item" style="border: none;"><a class="list-item " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="#" id="link"><i class="fas fa-phone hard" onclick="myFunction2()" data-tippy-content = "0789123456"></i></a></li>
+      </ul>
+    <div class="row " style="margin-top: 10%;width: 80%;margin-left: 10%;">
         <div class="col-lg-4 article" >
           <a href="LUK.html">
             <div class="img-str">
@@ -101,12 +106,75 @@
             </div>
           </a>
         </div>
+        <div class="col-lg-4 article" >
+          <a href="vovinam.html">
+            <div class="img-str">
+              <img src="vovinam1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="title">
+              <h1>VOVINAM "MÔN HỌC" LẠ ĐÀO TẠO NHỮNG CHIẾN BINH</h1>
+              <p>7/13/2021</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 article" >
+          <a href="nhaccutruyenthong.html">
+            <div class="img-str">
+              <img src="nhaccutruyenthong.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="title">
+              <h1>GIỚI THIỆU VỀ NHẠC CỤ TRUYỀN THỐNG</h1>
+              <p>7/13/2021</p>
+            </div>
+          </a>
+        </div>
         
     </div>
    
 
      
- 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    
+    
+   <script>
+       tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+            tippy('button', {
+        onMount(instance) {
+            const box = instance.popper.firstElementChild;
+            requestAnimationFrame(() => {
+            box.classList.add('animated');
+            box.classList.add('wobble');
+            });
+        },
+        onHidden(instance) {
+            const box = instance.popper.firstElementChild;
+            box.classList.remove('animated');
+            box.classList.remove('wobble');
+        },
+        });
+   </script>
+    <script>
+        import tippy, {animateFill} from 'tippy.js';
+        import 'tippy.js/dist/backdrop.css';
+        import 'tippy.js/animations/shift-away.css';
+
+        tippy(targets, {
+        animateFill: true,
+        plugins: [animateFill],
+        });
+    </script>
      
       
 </body>

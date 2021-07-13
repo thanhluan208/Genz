@@ -1044,7 +1044,10 @@ time {
   {
     z-index: 1000; 
   }
-  
+  .middle .bottom
+    {
+      margin-top: 15%;
+    }
   html 
   {
     overflow-x: hidden;
@@ -1069,7 +1072,7 @@ time {
   #university h1 
   {
     font-size: 36px;
-    margin-top: 20%;
+    margin-top: 40%;
   }
   .bigbox
   {

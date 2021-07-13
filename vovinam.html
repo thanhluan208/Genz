@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Vovinam Club</title>
+    <title>Vovinam - Môn học “lạ” đào tạo những chiến binh
+    </title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -18,10 +19,15 @@
 
 </head>
 <style>
+    .content::before
+    {
+        content: none;
+        background: none;
+    }
 </style>
 <body   >
       
-    <img src="vovinam_BG.png" class="img-fluid" style="position: fixed;height: 100%;width: 100%;top: 0;" alt="">
+    <img id="img" src="Fluid.png" class="img-fluid" style="position: fixed;height: 100%;width: 100%;top: 0;" alt="">
     <div class="row main" style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin:5%;margin-left: 2%;border-radius: 20px;width: 95%;margin-top: 2%;height: 90vh;">
         <div class="col-lg-1 column1" style="padding-left:0;padding-right: 0;border-top-left-radius: 20px;border-bottom-left-radius: 20px;background: rgba(255,255,255,0.8);backdrop-filter: blur(4px);height: 100%;" >
             <div class="container logo">
@@ -29,65 +35,93 @@
                 
             </div>
             <div class="navi_str" style="display: inline-grid;margin-top: 70%;width: 100%;">
-                <a class="navi" href="index.html"><i class="fas fa-home"></i></a>
-                <a class="navi" href="university.html"><i class="fas fa-university"></i></a>
-                <a  class="navi" href=""><i class="far fa-calendar-check"></i></a>
-                <a class="navi" href=""><i class="far fa-newspaper"></i></a>
-                <a class="navi" href="About.html"><i class="fas fa-users"></i></a>
+                <a class="navi hard" href="index.html" data-tippy-content = "Home"><i class="fas fa-home"></i></a>
+                <a class="navi hard" href="university.html" data-tippy-content = "FPT University"><i class="fas fa-university"></i></a>
+                <a  class="navi hard" href="test.html"data-tippy-content = "Clubs in FPT"><i class="far fa-calendar-check"></i></a>
+                <a class="navi hard" href="event.html"data-tippy-content = "Events"><i class="far fa-newspaper"></i></a>
+                <a class="navi hard" href="About.html"data-tippy-content = "About us"><i class="fas fa-users"></i></a>
             </div>
             
-            <div class="quit"><a href="test.html"><i class="fas fa-power-off"></i></a></div>
+            <div class="quit hard"data-tippy-content = "Article"><a href="Article.html" ><i class="fas fa-power-off"></i></a></div>
         </div>
-        <div  class="col-lg-8 content" >
-            <h1 class="heading">
+        <div  class="col-lg-8 content"  style="padding-bottom: 5%;">
+            <h1 class="heading" style="font-size: 30px;">
                 Vovinam - Môn học “lạ” đào tạo những chiến binh
             </h1>
-            <p class="para">Vovinam - môn học chính thức trong chương trình giáo dục thể chất của ĐH FPT. Học Vovinam, sinh viên FPTU không chỉ hiểu hơn về truyền thống thượng võ của dân tộc Việt Nam mà còn rèn luyện về sức khỏe, bồi dưỡng tinh thần yêu nước thông qua tinh thần võ đạo.
+            <p class="para" style="font-size: 18px;padding-left: 5%;padding-right: 5%;">
+                Vovinam - môn học chính thức trong chương trình giáo dục thể chất của ĐH FPT. Học Vovinam, sinh viên FPTU không chỉ hiểu hơn về truyền thống thượng võ của dân tộc Việt Nam mà còn rèn luyện về sức khỏe, bồi dưỡng tinh thần yêu nước thông qua tinh thần võ đạo.
             </p>
-            <p class="para">“Giáo dục thể chất” từ khi nào đã trở thành một nỗi ác mộng đối với sinh viên nói chung, nhưng với sinh viên FPT thì đây là bộ môn “vừa khỏe vừa vui”. Ở FPTU, những môn “cầu lông, đá cầu, bóng chuyền…” được thay thế bởi Vovinam - Việt Võ Đạo, một môn học cho ta nhiều kiến thức về cả mặt thể chất lẫn đạo đức.
+            <p class="para" style="font-size: 18px;padding-left: 5%;padding-right: 5%;">
+                “Giáo dục thể chất” từ khi nào đã trở thành một nỗi ác mộng đối với sinh viên nói chung, nhưng với sinh viên FPT thì đây là bộ môn “vừa khỏe vừa vui”. Ở FPTU, những môn “cầu lông, đá cầu, bóng chuyền…” được thay thế bởi Vovinam - Việt Võ Đạo, một môn học cho ta nhiều kiến thức về cả mặt thể chất lẫn đạo đức.
             </p>
-            <p class="para">Bước vào kì đầu tiên, sinh viên sẽ được nhận võ phục và bắt đầu quá trình rèn luyện ở môn Vovinam 1, hay được gọi với một cái tên thân thuộc khác là “Võ 1”. Để có thể phát triển bản thân hơn nữa thì điều quan trọng nhất chính là rèn luyện thể chất và những động tác cơ bản như đấm, đá,... khiến chúng ta khỏe hơn cũng như tự tin hơn. Đây cũng là lúc để chúng ta tạo thêm những mối quan hệ, kết nối với nhiều người bạn mới. Và đừng lo sợ trước những giảng viên Vovinam đơn giản bởi họ luôn mang trong mình tâm hồn trẻ trung và luôn sẵn sàng giúp đỡ chúng ta khi có thắc mắc hay gặp khó khăn.</p>
-            <p class="para">Sau đó chúng ta cùng đến với “Võ 2”, có lẽ là môn học mà các bạn mong chờ nhất. Đây là môn học dạy cho chúng ta các đòn, các tư thế và tổ hợp tự vệ cơ bản. Với kiến thức từ môn Vovinam 2, các bạn nam lẫn các bạn nữ có thể tự tin bảo vệ bản thân mình mỗi khi gặp nguy hiểm, kể cả khi gặp vũ khí như dao, gậy, súng….. Nhưng cũng đừng hào hứng quá mà “tỉ thí” với nhau các bạn nhé! 
+            
+            <p class="para" style="font-size: 18px;padding-left: 5%;padding-right: 5%;">
+                Bước vào kì đầu tiên, sinh viên sẽ được nhận võ phục và bắt đầu quá trình rèn luyện ở môn Vovinam 1, hay được gọi với một cái tên thân thuộc khác là “Võ 1”. Để có thể phát triển bản thân hơn nữa thì điều quan trọng nhất chính là rèn luyện thể chất và những động tác cơ bản như đấm, đá,... khiến chúng ta khỏe hơn cũng như tự tin hơn. Đây cũng là lúc để chúng ta tạo thêm những mối quan hệ, kết nối với nhiều người bạn mới. Và đừng lo sợ trước những giảng viên Vovinam đơn giản bởi họ luôn mang trong mình tâm hồn trẻ trung và luôn sẵn sàng giúp đỡ chúng ta khi có thắc mắc hay gặp khó khăn. 
             </p>
-            <p class="para">Cuối cùng ta cùng đến với “Võ 3”, một trong những môn học độc đáo nhất, tạo nên nét riêng của Đại học FPT. Thay vì học những động tác võ thuật như 2 môn trước đó, chúng ta sẽ hóa thân vào những nhân vật được tạo nên từ chính sức tưởng tượng của chúng ta. Vâng, ý tôi ở đây chính là “Võ kịch” hay nói rõ hơn là dựng kịch mang yếu tố võ thuật. Ở đây, khả năng sáng tạo của sinh viên sẽ được phát huy tối đa thông qua những động tác võ, thông qua diễn biến vở kịch hay những cú plot twist tuyệt vời.  Màn kịch đó chính là thành quả sau 3 môn võ, có lẽ là một trong những kỉ niệm đáng nhớ nhất đối với sinh viên trường F.</p>
+            <p class="para" style="font-size: 18px;padding-left: 5%;padding-right: 5%;">
+                Sau đó chúng ta cùng đến với “Võ 2”, có lẽ là môn học mà các bạn mong chờ nhất. Đây là môn học dạy cho chúng ta các đòn, các tư thế và tổ hợp tự vệ cơ bản. Với kiến thức từ môn Vovinam 2, các bạn nam lẫn các bạn nữ có thể tự tin bảo vệ bản thân mình mỗi khi gặp nguy hiểm, kể cả khi gặp vũ khí như dao, gậy, súng….. Nhưng cũng đừng hào hứng quá mà “tỉ thí” với nhau các bạn nhé!
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 5%;padding-right: 5%;">
+                Cuối cùng ta cùng đến với “Võ 3”, một trong những môn học độc đáo nhất, tạo nên nét riêng của Đại học FPT. Thay vì học những động tác võ thuật như 2 môn trước đó, chúng ta sẽ hóa thân vào những nhân vật được tạo nên từ chính sức tưởng tượng của chúng ta. Vâng, ý tôi ở đây chính là “Võ kịch” hay nói rõ hơn là dựng kịch mang yếu tố võ thuật. Ở đây, khả năng sáng tạo của sinh viên sẽ được phát huy tối đa thông qua những động tác võ, thông qua diễn biến vở kịch hay những cú plot twist tuyệt vời.  Màn kịch đó chính là thành quả sau 3 môn võ, có lẽ là một trong những kỉ niệm đáng nhớ nhất đối với sinh viên trường F.
+            </p>
+            <div  style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;">
+                <img src="https://lh5.googleusercontent.com/EsaJXXHZE5XQ62E5keRxDkKN_386k6_qFgnsiQOY7sUugBvZoTGEg__pceJBfCmiCepPOTJI5JThCkiZiW3q-NF9mit2SVlBFcSBOqLq4umGrQEUNgvEM-8Kyc6IYwZubMjMdY1s" style="width: 90%; height: 50%;border-radius: 10px;" alt=""> 
+            </div>
+            <p style="text-align: center;">Kỷ lục số lượng tham gia đồng diễn Vovinam tại FPT
+            </p>
+            <div  style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;">
+                <img src="https://lh5.googleusercontent.com/DJMEiL3GhfYlVwWxNIc3vPPblF-55jKYfwNPRMY1YkgX840V90NFP2FmF6bB5gChtQsZ6o5nzhUWa6FCw6_d7eK15hFQKg8lkkwLQq0_-Ux1KdfgpNfOZmSjrnh9tngYOh44qgNb" style="width: 90%; height: 50%;border-radius: 10px;" alt=""> 
+            </div>
+            <p style="text-align: center;">Võ đường Vovinam tại Đại học FPT Hà Nội
+            <div  style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;">
+                <img src="https://lh3.googleusercontent.com/_QOMh-4nXyu2skK7MRRfFJacKJMiGUhvYxjt3iFoYB-TWR2owuMdY8u_HX8ce-6YyiAEL8u34eyesKX91AC7QrPW_joLKT9SclQ8lhvcElHlvOkfoFxegHq40dkRajSsax-GFANe" style="width: 90%; height: 50%;border-radius: 10px;" alt=""> 
+            </div>
+            
+            
         </div>
         <div class="col-lg-2" style="margin-left: 2%;">
             <div class="container contact">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fas fa-envelope"></i></a>
-                <a href=""><i class="fas fa-phone"></i></a>
+                <a class="hard" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="hard" href=""><i class="fas fa-envelope"></i></a>
+                <a class="hard" href=""><i class="fas fa-phone"></i></a>
             </div>
-            <div class="title_str" >
-                <h1 class="title" style="font-size: 25px;text-align: center;color: #fff">Other Clubs</h1>
-            </div>
-            <div class="clubs_str">
-                <div class="clubs-list container">
-                    <h2 style="font-size: 18px;color: #7303c0;margin: 0;">Taekwondo</h2>
-                    <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 15px;margin: 10%;">Click here to visit</a>
-                </div>
-                <div class="clubs-list container">
-                        <h2 style="font-size: 18px;color: #7303c0;margin: 0;">Muay thai</h2>
-                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 15px;margin: 10%;">Click here to visit</a>
-                </div>
-                <div class="clubs-list container">
-                        <h2 style="font-size: 18px;color: #7303c0;margin: 0;">Kickfit</h2>
-                        <a href="" style="color: #fff;text-align: center;font-weight: 500;font-size: 15px;margin: 10%;">Click here to visit</a>
-                </div>
-            </div>
-            
-            <div class="container">
-                <!-- <img src="door.png" class="img-fluid" alt=""> -->
-            </div>
-        </div>
-
+        </div>    
     </div>
     
- 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     
+    
+   <script>
+       tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+            tippy('button', {
+        onMount(instance) {
+            const box = instance.popper.firstElementChild;
+            requestAnimationFrame(() => {
+            box.classList.add('animated');
+            box.classList.add('wobble');
+            });
+        },
+        onHidden(instance) {
+            const box = instance.popper.firstElementChild;
+            box.classList.remove('animated');
+            box.classList.remove('wobble');
+        },
+        });
+   </script>
     
    
-
-     
      
       
 </body>

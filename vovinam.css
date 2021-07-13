@@ -110,7 +110,8 @@ a:hover
 {
     position: absolute;
     top: 25%;
-    height: 75%;
+    height: 70%;
+    border-radius: 10%;
     width: 100%;
     overflow: auto;
     padding: 5%;
@@ -309,11 +310,11 @@ a:hover
     {
       color: #f37335 !important;
     }
-    #img
+    /* #img
     {
       width: 0 !important;
       height: 0 !important;
-    }
+    } */
     body 
     {
         overflow: auto;
@@ -391,7 +392,6 @@ a:hover
         padding: 2%;
         padding-bottom: 2%;
         background: rgba(255,255,255,0.2);
-        box-shadow: 0 15px 35px rgb(0 0 0 / 50%);
         backdrop-filter: blur(4px);
         margin-top: 5%;
         border-radius: 10px;

@@ -1,7 +1,7 @@
 .navbar
     {
         position: absolute !important;
-        top: 0;
+        top: 2%;
     }
 
 @media only screen and (min-width:2250px) {
@@ -478,9 +478,17 @@
     {
         display: none;
     }
+    .col-lg-3
+    {
+        height: unset !important;
+    }
 }
 @media only screen and (max-width:770px) 
 {
+    .button_group
+    {
+        bottom: -4% !important;
+    }
     .carde
     {
         margin-bottom: 0 !important;
@@ -661,6 +669,11 @@
     }
     .para
     {
-        font-size: 15px !important;
+        font-size: 20px !important;
     }
+    .button_group
+    {
+        bottom: -4% !important;
+    }
+    
 }

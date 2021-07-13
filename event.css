@@ -197,9 +197,6 @@ body
   }
   nav
   {
-    position: unset !important;
-    width: 100% !important;
-    left: 0% !important;
     top: 2% !important;
   }
   
