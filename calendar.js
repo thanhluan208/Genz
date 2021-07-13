@@ -164,14 +164,14 @@
         plugin.changeMonth(-1)
         e.preventDefault();
         console.log($(".month").text())
-        if($(".month").text() == "august 2021")
+        if($(".month").text() == "july 2021")
             {
               var i;
               console.log("workd")
               for(i = 0 ;i< $(".day").length;i++)
               {
                 console.log("worded")
-                if($(".day")[i].textContent == "20")
+                if($(".day")[i].textContent == "17")
                 {
                   console.log('worked')
                   $(".day")[i].classList.add("has-event")
@@ -181,8 +181,8 @@
               var $event = $('' +
               '<div class="event">' +
               ' <div class="event-hour">' + "8h00" + '</div>' +
-              ' <div class="event-date">' +"Friday, August 20, 2021"+ '</div>' +
-              ' <div class="event-summary">' + "Happy Birthday to me" + '</div>' +
+              ' <div class="event-date">' +"Saturday, July 17, 2021"+ '</div>' +
+              ' <div class="event-summary">' + "PE exam" + '</div>' +
               '</div>');
               
               $(".has-event").click(function(){
