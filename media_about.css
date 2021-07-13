@@ -79,7 +79,7 @@
     opacity: 0;
     transition: all .5s cubic-bezier(0.5, 0.5, 0.5, 0.5)
 }
-.col-lg-4:hover .info-member
+.member-card:hover .info-member
 {
   opacity: 1;
   /* z-index: 100; */
