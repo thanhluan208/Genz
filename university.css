@@ -924,7 +924,7 @@ time {
   }
   #university h1 
   {
-    margin-top: 10%;
+    margin-top: 15%;
   }
 }
 @media only screen and (max-width:1000px)
@@ -967,6 +967,10 @@ time {
 {
     transition-delay: 0.8s;
 }
+.middle .bottom
+{
+  margin-top: 15%;
+}
 }
 
 @media only screen and (max-width:770px)
@@ -991,7 +995,7 @@ time {
   }
   .content_box div
   {
-    margin-top: 30% !important;
+    margin-top: 20% !important;
   }
   .content_box h1 
   {
@@ -1036,6 +1040,17 @@ time {
   .custom-btn
   {
     margin-top: 20% !important;
+  }
+}
+@media only screen and (max-width:500px)
+{
+  .content_box div
+  {
+    margin-top: 30% !important;
+  }
+  .content_box h1
+  {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width:400px)

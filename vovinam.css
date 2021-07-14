@@ -9,7 +9,7 @@
   border: 1px solid tomato;
 }
 body 
-{overflow: hidden; background: linear-gradient(180deg, #ff9068, #fd746c); }
+{overflow: hidden; background: linear-gradient(180deg, #ff9068, #fd746c); background-size: 4000% 4000%;}
 .clubs-list h2
 {
     font-size: 100% !important;
@@ -541,6 +541,16 @@ a:hover
     {
       margin-left: 15% !important;
     }
+    .heading
+    {
+      font-size: 26px !important;
+    }
+    .para
+    {
+      font-size: 16px !important;
+      text-align: center !important;
+      padding-right: 3% !important;
+    }
 }    
 
 @media only screen and (max-width:400px)
@@ -553,6 +563,16 @@ a:hover
     .navi_str
     {
       margin-left: 12% !important;
+    }
+    .heading
+    {
+      font-size: 24px !important;
+    }
+    .para
+    {
+      font-size: 14px !important;
+      text-align: center !important;
+      padding-right: 3% !important;
     }
 }
 .disappear
