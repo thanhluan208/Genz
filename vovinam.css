@@ -9,7 +9,7 @@
   border: 1px solid tomato;
 }
 body 
-{overflow: hidden;}
+{overflow: hidden; background: linear-gradient(180deg, #ff9068, #fd746c); }
 .clubs-list h2
 {
     font-size: 100% !important;
@@ -62,6 +62,10 @@ a:hover
 {
   font-size: 30px;
   color: #ff6600;
+}
+#img
+{
+  display: none;
 }
 @media only screen and (min-width:2000px)
 {
@@ -332,6 +336,7 @@ a:hover
     .main
     {
         height: unset !important;
+        margin-left: 2% !important;
     }
     .clubs_str
     {
@@ -339,16 +344,16 @@ a:hover
     }
     .column1
     {
-        border-radius: 20px !important;
+        border-radius: 0px !important;
         background: rgba(255,255,255,0.8);
         backdrop-filter: blur(400px);
-        padding-top: 2%;
+        padding-top: 0%;
         width: 100%;
         height: 5% !important;
-         z-index:  1000    ;
+        z-index:  1000    ;
         position: sticky;
-        top: 2%;
-        margin-right: 2%;
+        top: 0%;
+        margin-right: 0%;
         left: 0;
     }
     .logo
@@ -360,7 +365,7 @@ a:hover
     }
     .logo img 
     {
-        width: 12%;
+        width: 10%;
     }
     .navi_str
     {
@@ -371,7 +376,7 @@ a:hover
         padding-top: 0 !important;
         height: unset !important;
         text-align: unset !important;
-        margin-left: 12% !important;
+        margin-left: 10% !important;
     }
     .quit 
     {
@@ -445,7 +450,7 @@ a:hover
 {
     .logo img 
     {
-        width: 15%;
+        width: 12%;
     }
     .navi 
     {
@@ -466,14 +471,14 @@ a:hover
         text-align: left;
         padding-left: 2% !important;
     }
+    .main
+    {
+      margin-top: 0% !important;
+    }
     
 }
 @media only screen and (max-width:660px)
 {
-    .logo img 
-    {
-        width: 15%;
-    }
     .clubs_str
     {
         margin-top: 25%;
@@ -493,7 +498,7 @@ a:hover
         box-shadow: unset !important;
         border-radius: 20px !important;
         width: 100% !important;
-        margin-top: 2% !important;
+        margin-left: 0 !important;
     }
     .clubs_str
 
@@ -507,6 +512,7 @@ a:hover
     .logo
     {
         top: 20%;
+        padding-left: 0;
     }
     .logo img 
     {
@@ -515,7 +521,7 @@ a:hover
     .navi 
     {
         margin-left: 4%;
-        font-size: 25px;
+        font-size: 30px;
     }
     .title
     {
@@ -528,12 +534,27 @@ a:hover
     }
     .content img 
     {
-      width: 100% !important;
+      margin-left: -5%;
       height: 100%;
+    }
+    .navi_str
+    {
+      margin-left: 15% !important;
     }
 }    
 
-
+@media only screen and (max-width:400px)
+{
+  .navi 
+    {
+        margin-left: 4%;
+        font-size: 25px;
+    }
+    .navi_str
+    {
+      margin-left: 12% !important;
+    }
+}
 .disappear
 {
     transform: translateY(10000%) !important;
