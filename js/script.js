@@ -19,9 +19,9 @@ isMusicPaused = true;
 window.addEventListener("load", ()=>{
   loadMusic(musicIndex);
   playingSong(); 
-  wrapper.classList.add("paused");
-  playPauseBtn.querySelector("i").innerText = "pause";
-  mainAudio.play();
+  // wrapper.classList.add("paused");
+  // playPauseBtn.querySelector("i").innerText = "pause";
+  // mainAudio.play();
 });
 
 function loadMusic(indexNumb){
