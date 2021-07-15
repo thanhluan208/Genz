@@ -5,6 +5,11 @@
         padding-top: 20%;
         padding-bottom: 15%;
     }
+    .preloader
+    {
+        display: none;
+    }
+    
 }
 @media only screen and (max-width: 680px)
 {
@@ -21,6 +26,10 @@
     .mast__text
     {
         font-size: 21px !important;
+    }
+    #body
+    {
+        background-size: unset !important;
     }
 }
 @media only screen and (max-width:490px)
