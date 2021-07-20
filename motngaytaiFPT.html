@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Một ngày của sinh viên tại trường</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+    <link rel="stylesheet" href="vovinam.css">
+
+</head>
+<style>
+    .content::before
+    {
+        content: none;
+        background: none;
+    }
+    thead tr th:nth-child(1)
+    {
+        width: 15%;
+    }
+    thead tr th:nth-child(2)
+    {
+        width: 25%;
+    }
+    
+</style>
+<body   >
+      
+    <img id="img" src="Fluid.png" class="img-fluid" style="position: fixed;height: 100%;width: 100%;top: 0;" alt="">
+    <div class="row main" style="background: rgba(255, 255, 255, 0.2);box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8) ;backdrop-filter: blur( 4px );margin:5%;margin-left: 2%;border-radius: 20px;width: 95%;margin-top: 2%;height: 90vh;">
+        <div class="col-lg-1 column1" style="padding-left:0;padding-right: 0;border-top-left-radius: 20px;border-bottom-left-radius: 20px;background: rgba(255,255,255,0.8);backdrop-filter: blur(4px);height: 100%;" >
+            <div class="container logo">
+                <img src="favicon.png" class="img-fluid" alt="">
+                
+            </div>
+            <div class="navi_str" style="display: inline-grid;margin-top: 70%;width: 100%;">
+                <a class="navi hard" href="index.html" data-tippy-content = "Home"><i class="fas fa-home"></i></a>
+                <a class="navi hard" href="university.html" data-tippy-content = "FPT University"><i class="fas fa-university"></i></a>
+                <a  class="navi hard" href="test.html"data-tippy-content = "Clubs in FPT"><i class="far fa-calendar-check"></i></a>
+                <a class="navi hard" href="event.html"data-tippy-content = "Events"><i class="far fa-newspaper"></i></a>
+                <a class="navi hard" href="About.html"data-tippy-content = "About us"><i class="fas fa-users"></i></a>
+            </div>
+            
+            <div class="quit hard"data-tippy-content = "Article"><a href="Article.html" ><i class="fas fa-power-off"></i></a></div>
+        </div>
+        <div  class="col-lg-8 content"  style="padding-bottom: 5%;">
+            <h1 class="heading" style="font-size: 40px;">
+                Một ngày của sinh viên tại trường
+            </h1>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Xin chào các bạn, chắc hẳn người tìm đến trang web này sẽ là các bạn
+                học sinh hiện tại đang hoàn thành lớp 12 – lớp cuối cấp ba tràn đầy kỉ
+                niệm đáng nhớ thân thương của mình. Mọi người đang có nhu cầu tìm
+                hiểu về các trường Đại học mình có dự định vào, so sánh chúng để tìm
+                ra ngôi trường phù hợp sẽ gắn bó với mình ít nhất vào 3 năm tới. Đến
+                với bài viết lần này, mình – một sinh viên K16 đã học và sinh hoạt tại
+                đây được một năm – sẽ đưa các bạn đi dạo quanh với nhật kí của một
+                sinh viên theo học trường Đại học FPT nằm trên mảnh đất Hòa Lạc
+                thuộc khu vực Thạch Thất này dựa trên những gì mình đã cảm nhận
+                nhé!
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Trước hết, mình sẽ nói về giai đoạn đầu của một ngày. Mà đã là “đầu”
+                thì chắc hẳn ai cũng nghĩ tới đó chính là thức dậy rồi! Nhưng, điều mình
+                muốn kể thêm với các bạn ở đây là không chỉ mỗi thức dậy thôi đâu,
+                mà sinh viên FPT cũng sẽ có hai kiểu nữa. Kiểu đầu tiên mình có thể kể
+                tới đó chính là các sinh viên sinh hoạt ngay tại khu kí túc xá của của
+                trường (mình gọi đây là F1) và kiểu thứ hai không còn gì khác ngoài sinh
+                viên chọn sống ở trọ hay chung cư bên ngoài trường (mình gọi đây là
+                F2). Nhìn chung, F1 và F2 cũng đều phải thức dậy như bao nhiêu con
+                người khác để bắt đầu một ngày mới tràn đầy sức sống. F1 có thể đặt
+                báo thức muộn hơn so với F2 tầm 20-30 phút vì khoảng cách từ KTX tới
+                các tòa nhà để học thực sự… rất ngắn, chỉ cần các bạn đi bộ 3-5 phút
+                với các bạn sinh hoạt ở KTX tòa A tới D, còn lại từ E tới H có lẽ sẽ mất
+                thêm tầm 3, 4 phút gì đó nhé. Trong khi đó thì F2 lại phải “lọ mọ” dậy
+                sớm từ lúc 6 giờ sáng để vệ sinh, ăn sáng rồi chuẩn bị dụng cụ học tập
+                các thứ rồi lôi xe để đi tới trường. Song công đoạn của F2 cũng có vẻ
+                mệt mỏi hơn khi mỗi lần đến trường các bạn đều phải gửi xe, nhất là
+                với các bạn khi đến muộn vào sau 7h10. Khi đó các bạn thi nhau tới
+                trường, tụ tập ở con đường khá là bé dẫn vào khu để xe, các bác bảo vệ
+                quẹt thẻ nhiều quá mãi chưa hết rồi nào là đi tìm chỗ để xe cho riêng
+                mình nữa. Nếu bạn có ý định vào trường FPT và ở ngoài trọ/chung cư,
+                khôn ngoan nhất thì hãy đặt cho mình một thói quen dậy sớm để vào
+                trường nhé! Đối với các sinh viên có ca học bắt đầu từ buổi trưa chiều
+                (từ tầm 12h50 đổ đi), các bạn cũng nên đến sớm vì buổi chiều cũng có
+                thể sẽ đông không khác gì buổi sáng đâu, do đó đừng “nước đến chân
+                mới nhảy” nha.
+            </p>
+            <br/>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Theo như thông tin chúng mình có, thì chương trình tiếng Anh sẽ có tối đa
+                là 6 mức. Nếu trong bài kiểm tra đầu vào, bạn đạt từ mức 4 trở lên, thì bạn
+                sẽ được học TRANSITION - môn học tiếng Anh chuyên sâu vào 2 kĩ năng đọc và
+                viết, còn nếu dưới mức 4, bạn sẽ được học LITTLE UK - môn học tiếng Anh
+                chuyên sâu vào các kĩ năng nghe, nói, các kỹ năng mềm như làm việc nhóm,
+                hùng biện, trang luận,... các kĩ năng mà theo giới thiệu, sẽ giúp bạn trở
+                thành “Công dân toàn cầu” (Global Citizen). Thật tuyệt vời phải không nào!
+            </p>
+            <br/>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Sau giai đoạn đầu, chúng ta bước vào giai đoạn hai, nói cách là khoảng
+                thời gian bắt đầu ca học đầu tiên của ngày. Thời gian học tập trên lớp
+                của sinh viên sẽ diễn ra trong 2-3 tiết học tùy theo lịch của từng người
+                cũng như của từng ngày. Mỗi tiết kéo dài 90 phút, bắt đầu từ 7h30 và
+                kết thúc lúc 17h20 hàng ngày. Ngoài khoảng thời gian học trên lớp là
+                khoảng thời gian nghe giáo viên giảng bài, tự học hoặc làm việc theo
+                nhóm.
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                <div style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;"><img
+                    src="1ngay.png"
+                    style="width: 90%; height: 50%;border-radius: 10px;"
+                    
+                /></div>
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Sinh viên có thể ngồi ở bất kỳ đâu trong khuôn viên trường để học và
+                làm việc nhóm như thư viện ở tòa Delta, khu tự học, ghế đá sân trường,
+                sảnh giảng đường, phòng học, căn tin hay kể cả là kí túc xá nữa. Đối với
+                những sinh viên học ca sáng, sau 12h20 vừa kết thúc ca 3 thì các bạn sẽ
+                có khoảng thời gian tầm 20 phút để ra căng tin để ăn uống hoặc mua
+                đồ bên ngoài trường và 10 phút chuẩn bị cũng như di chuyển tới lớp
+                học ca thứ tư (bắt đầu lúc 12h50) nếu như lịch học của các bạn có.
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                <div style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;"><img
+                    src="1ngay1.png"
+                    style="width: 90%; height: 50%;border-radius: 10px;"
+                    
+                /></div>
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                <div style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;"><img
+                    src="1ngay2.png"
+                    style="width: 90%; height: 50%;border-radius: 10px;"
+                    
+                /></div>
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Thông thường, sinh viên Đại học FPT sẽ kết thúc giờ học chính khóa vào
+                khoảng 5h20 chiều. Sau khoảng thời gian này, là giai đoạn thứ ba trong
+                ngày, là khi các bạn sinh viên có thể dành cho các hoạt động thể dục thể
+                thao và sinh hoạt tự do trong khuôn viên trường. Sinh viên được tự
+                chọn các môn thể thao yêu thích như bóng đá, bóng bàn, trượt
+                Skateboard, bóng rổ,… Ngoài ra sinh viên còn được sử dụng miễn phí
+                phòng tập thể hình với đầy đủ các thiết bị hiện đại, sân trượt bang nhân
+
+                tạo, nhà tập võ Vovinam… hay sinh hoạt theo nhóm tại Street work out,
+                sân tập nhảy,… Nếu bạn không tham gia bất cứ câu lạc bộ hay hoạt
+                động tập thể nào, bạn hoàn toàn có thể lấy xe ra về mỗi khi hoàn thành
+                toàn bộ lớp học có trong ngày nhé.
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Buổi tối là khoảng thời gian tự học của sinh viên. Thông thường, nếu
+                sinh viên tham gia các câu lạc bộ thường sẽ dành thời gian tầm 2 tiếng
+                1 buổi trong tuần để tham gia sinh hoạt tại các CLB. Đại học FPT Hà Nội
+                hiện có gần 40 CLB sinh viên sinh khác nhau sinh hoạt ở rất nhiều mảng.
+                Mỗi sinh viên được lựa chọn sinh hoạt tại nhiều CLB khác nhau tùy vào
+                sở thích.
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                <div style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;"><img
+                    src="1ngay3.png"
+                    style="width: 90%; height: 50%;border-radius: 10px;"
+                    
+                /></div>
+            </p>
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                <div style="display: flex;justify-content: center;align-items: center;margin-top: 5%;margin-left: 3%;"><img
+                    src="1ngay4.png"
+                    style="width: 90%; height: 50%;border-radius: 10px;"
+                    
+                /></div>
+            </p>
+            
+            <p class="para" style="font-size: 18px;padding-left: 8%;padding-right: 5%;">
+                Giai đoạn bốn hay cũng là thời gian kết thúc một ngày dài với rất nhiều
+                những hoạt động sôi nổi, sinh viên có thể dạo quanh sân trường để tận
+                hưởng không khí trong lành mát mẻ trước khi trở về phòng KTX hoặc về
+                trọ/chung cư của mình để nghỉ ngơi, ăn uống, học tập và chuẩn bị cho
+                một ngày mới. br
+                Như vậy mình đã điểm qua cho các bạn biết về một ngày sinh hoạt,
+                hoạt động cũng như học hành của những con người đang theo học tại
+                mái trường rực sắc màu cam này. Mong bài viết sẽ đem lại cũng như
+                góp phần tạo hứng thú cho các bạn để có động lực chọn vào ngôi
+                trường này nhé!
+            </p>
+            
+        </div>    
+        <div class="col-lg-2" style="margin-left: 2%;">
+            <div class="container contact">
+                <a class="hard" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="hard" href=""><i class="fas fa-envelope"></i></a>
+                <a class="hard" href=""><i class="fas fa-phone"></i></a>
+            </div>
+        </div>    
+    </div>
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    
+    
+   <script>
+       tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+            tippy('button', {
+        onMount(instance) {
+            const box = instance.popper.firstElementChild;
+            requestAnimationFrame(() => {
+            box.classList.add('animated');
+            box.classList.add('wobble');
+            });
+        },
+        onHidden(instance) {
+            const box = instance.popper.firstElementChild;
+            box.classList.remove('animated');
+            box.classList.remove('wobble');
+        },
+        });
+   </script>
+    <script>
+        import tippy, {animateFill} from 'tippy.js';
+        import 'tippy.js/dist/backdrop.css';
+        import 'tippy.js/animations/shift-away.css';
+
+        tippy(targets, {
+        animateFill: true,
+        plugins: [animateFill],
+        });
+    </script>
+   
+     
+      
+</body>
+</html>

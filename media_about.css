@@ -96,7 +96,7 @@
 {
   position: absolute;
   bottom: -3%;
-  width: 90%;
+  width: 100%;
 }
 .name h4
 {
@@ -250,7 +250,7 @@ transform: skewX(45deg) translateX(-150px);
 }
 
 }
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1000px) {
   .swiper-slide
   {
     width: 80vw;
@@ -270,15 +270,34 @@ transform: skewX(45deg) translateX(-150px);
   }
   .col-lg-4
   {
-    margin-top: 20% !important;
-    margin-bottom: 20% !important;
+    margin-top: 5% !important;
+    padding: 5% !important;
+    margin-bottom: 5% !important;
+    width: 50%;
+  }
+  .name h4 
+  {
+    font-size: 22px;
+  }
+  .name p 
+  {
+    font-size: 18px;
   }
 }
-@media only screen and (max-width:770px) {
+
+@media only screen and (max-width:800px) {
   .swiper-slide
   {
     width: 80vw;
     height: 40vh;
+  }
+  .mast__title
+  {
+    font-size: 30px !important;
+  }
+  .mast__text
+  {
+    font-size: 24px !important;
   }
   .swiper-container
   {
@@ -294,12 +313,89 @@ transform: skewX(45deg) translateX(-150px);
     font-size: 100%;
     color: #000;
   }
+  .col-lg-4
+  {
+    margin-top: 5% !important;
+    padding: 6% !important;
+    margin-bottom: 5% !important;
+    width: 50%;
+  }
+  .name 
+  {
+    bottom: -6%;
+  }
+  .info a 
+  {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .name h4 
+  {
+    font-size: 18px;
+  }
+  .name p 
+  {
+    font-size: 16px;
+  }
+  .info-member h4 
+  {
+    font-size: 16px;
+  }
+  .info-member
+  {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:600px)
+{
+  .mast__title
+  {
+    font-size: 28px !important;
+  }
+  .mast__text
+  {
+    font-size: 18px !important;
+  }
+  .col-lg-4
+  {
+    margin-top: 5% !important;
+    padding: 20% !important;
+    padding-top: 0 !important;
+    margin-bottom: 5% !important;
+    width: 100%;
+  }
+  .name
+  {
+    bottom: -1%;
+  }
+  .info a 
+  {
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+  }
+  .info-member h4 
+  {
+    font-size: 18px;
+  }
+  .info-member
+  {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width:400px) {
   .swiper-slide
   {
     width: 80vw;
     height: 30vh;
+  } .mast__title
+  {
+    font-size: 24px !important;
+  }
+  .mast__text
+  {
+    font-size: 14px !important;
   }
   .swiper-container
   {
@@ -318,5 +414,27 @@ transform: skewX(45deg) translateX(-150px);
   .col-md-4
   {
     margin-top: 5% !important;
+  }
+  .info a 
+  {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  .info-member h4 
+  {
+    font-size: 14px;
+  }
+  .info-member
+  {
+    font-size: 10px;
+  }
+  .info-member p 
+  {
+    margin: 0;
+  }
+  .name 
+  {
+    bottom: -6%;
   }
 }
