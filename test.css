@@ -26,7 +26,7 @@ a:hover
 .wrapper{
   overflow: hidden;
   position: absolute !important;
-  bottom: 1%;
+  bottom: -4%;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 15px 35px rgb(0 0 0 / 80%);
   backdrop-filter: blur( 4px );
